@@ -4,7 +4,7 @@
 **********************************************************/
 function puppyFunctions(){
 	// gather data from user.
-	var name     = document.getElementById("name");
+	var name     = document.getElementById("name").value;
 	var breed    = document.getElementById("breed");
 	var age      = document.getElementById("age");
 	var cuteness = document.getElementById("cuteness");
