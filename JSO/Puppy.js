@@ -17,12 +17,12 @@ function puppyFunctions(){
 		age: age,
 		cuteness: cuteness,
 		energy: energy,
-		displayDescription: function() {  // Method which will display type of Animal
-			return this.name + " is a " + this.age + " year old " + this.breed + ".";
+		displayDescription: function() {
+			return  "1st object creation is done using initialization<br>" 
+			+ this.name + " is a " + this.age + " year old " + this.breed + ".";
 		}
 	};
-	document.getElementById("puppy1").innerHTML = "1st object creation is done using
-	initialization" + pup1.displayDescription();
+	document.getElementById("puppy1").innerHTML = pup1.displayDescription();
 	/*
 	//2nd object creation: Constructor
 	var pup2 = new Puppy_2(name, breed, age, cuteness, energy);
