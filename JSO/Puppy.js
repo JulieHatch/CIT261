@@ -5,10 +5,10 @@
 function puppyFunctions(){
 	// gather data from user.
 	var name     = document.getElementById("name").value;
-	var breed    = document.getElementById("breed");
-	var age      = document.getElementById("age");
-	var cuteness = document.getElementById("cuteness");
-	var energy   = document.getElementById("energy");
+	var breed    = document.getElementById("breed").value;
+	var age      = document.getElementById("age").value;
+	var cuteness = document.getElementById("cuteness").value;
+	var energy   = document.getElementById("energy").value;
 	
 	// 1st object creation: Initialization
 	var pup1 = {
@@ -21,7 +21,8 @@ function puppyFunctions(){
 			return this.name + " is a " + this.age + " year old " + this.breed + ".";
 		}
 	};
-	document.getElementById("puppy1").innerHTML = pup1.displayDescription();
+	document.getElementById("puppy1").innerHTML = "1st object creation is done using
+	initialization" + pup1.displayDescription();
 	/*
 	//2nd object creation: Constructor
 	var pup2 = new Puppy_2(name, breed, age, cuteness, energy);
