@@ -18,7 +18,7 @@ function puppyFunctions(){
 		cuteness: cuteness,
 		energy: energy,
 		displayDescription: function() {
-			return  "1st object creation is done using initialization<br>" 
+			return  "<b>1st object creation is done using initialization</b><br>" 
 			+ this.name + " is a " + this.age + " year old " + this.breed + ".";
 		}
 	};
