@@ -114,13 +114,10 @@ function puppyFunctions(){
 function inheritance(){
 	Puppy_2.prototype.cost ="";
 	var pup2I = new Puppy_2("Jenny", "Pug", 4);
-	
 	pup2I.cost ="$4.00";
 	
 	pup2I.displayDescription2 = function() {
-		return "<b>2nd object creation is "
-		+ "done using instantiation</b><br>" 
-		+ this.name + " is a " + this.age 
+		return this.name + " is a " + this.age 
 		+ " year old " + this.breed + 
 		" who costed: " + this.cost + ".<br>";
 	};
