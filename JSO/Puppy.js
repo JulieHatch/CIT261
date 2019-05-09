@@ -34,6 +34,7 @@ function puppyFunctions(){
 		+ this.name + " is a " + this.age 
 		+ " year old " + this.breed + ".";
 	}
+	
 	/*
 	//3rd object creation: Object.create
 	var Puppy3 = {
