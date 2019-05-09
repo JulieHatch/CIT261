@@ -58,12 +58,6 @@ function Puppy_2(name, breed, age, cuteness, energy){
 	this.age = age;
 	this.cuteness = cuteness;
 	this.energy = energy;
-	displayDescription: function() {
-			return "<b>1st object creation is "
-			+ "done using initialization</b><br>" 
-			+ this.name + " is a " + this.age 
-			+ " year old " + this.breed + ".";
-		};
 }
 
 /**********************************************************
