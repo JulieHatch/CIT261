@@ -49,10 +49,8 @@ function puppyFunctions(){
 	var age      = document.getElementById("age").value;
 	var cuteness = document.getElementById("cuteness").value;
 	var energy   = document.getElementById("energy").value;
-		
 	
-	
-	// 1st object creation: Initialization
+	// 1st object creation: Literal notation
 	var pup1 = {
 		name: name,
 		breed: breed,
@@ -61,18 +59,20 @@ function puppyFunctions(){
 		energy: energy,
 		displayDescription: function() {
 			return "<b>1st object creation is "
-			+ "done using initialization</b><br>" 
+			+ "done using Literal notation</b><br>" 
 			+ this.name + " is a " + this.age 
 			+ " year old " + this.breed + ".<br>";
 		}
 	};
 	document.getElementById("puppy1").innerHTML = pup1.displayDescription();
 	
-	//2nd object creation: Constructor
-	var pup2 = new Puppy_2(name, breed, age, cuteness, energy);
+	//2nd object creation: Instantiation
+	var pup2 = new Puppy_2(	name, breed, age, cuteness, energy);
+	
+	//Method declared after object is created.
 	pup2.displayDescription2 = function() {
 		return "<b>2nd object creation is "
-		+ "done using a constructor</b><br>" 
+		+ "done using instantiation</b><br>" 
 		+ this.name + " is a " + this.age 
 		+ " year old " + this.breed + ".<br>";
 	}
@@ -96,11 +96,10 @@ function puppyFunctions(){
 	var pup3 = Object.create(Puppy3);
 	puppy_3(pup3, name, breed, age, cuteness, energy);
 	document.getElementById("puppy3").innerHTML = pup3.displayDescription();
-
 }
 
 /**********************************************************
- * 2nd way to create an object is through constructors
+ * Constructor for Puppy_2
 **********************************************************/
 function Puppy_2(name, breed, age, cuteness, energy){
 	this.name = name;
