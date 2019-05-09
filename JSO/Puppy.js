@@ -75,7 +75,7 @@ function puppyFunctions(){
 		+ "done using instantiation</b><br>" 
 		+ this.name + " is a " + this.age 
 		+ " year old " + this.breed + ".<br>";
-	};
+	}
 	document.getElementById("puppy2").innerHTML = 
 	pup2.displayDescription2();
 	
