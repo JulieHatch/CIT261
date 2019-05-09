@@ -1,6 +1,6 @@
 /**********************************************************
  * Simple definition of JavaScript Object and how to use
- * properties of object.
+ * properties of object. Also calls the inheritance function.
 **********************************************************/
 function demo(){
 	// Simple definition of an js object
@@ -36,6 +36,9 @@ function demo(){
 	delete sPuppy.cuteness;
 	document.getElementById("deleted").innerHTML = 
 	"Deleted: " + sPuppy.cuteness + "<br>";
+	
+	//Now for inheritance
+	inheritance();
 }
 
 /**********************************************************
@@ -103,9 +106,6 @@ function puppyFunctions(){
 	
 	document.getElementById("puppy3").innerHTML =
 	pup3.displayDescription();
-	
-	//Now for inheritance
-	inheritance();
 }
 
 /**********************************************************
