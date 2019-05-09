@@ -1,4 +1,35 @@
 /**********************************************************
+ * Simple definition of JavaScript Object and how to use
+ * properties of object.
+**********************************************************/
+function demo(){
+	// Simple definition of an js object
+	var sPuppy = {
+		name: "Max", 
+		breed: "Poodle", 
+		age: "3",
+		description: function() {
+			return this.name + " is a " +
+			this.age + " year old " + 
+			this.breed + ".<br>";
+		}
+		// "Max is a 3 year old Poodle."
+	};
+	
+	// add property to sPuppy
+	sPuppy.cuteness = "very";
+	document.getElementById("added").innerHTML = "Added: " + sPuppy.cuteness + "<br>";
+	
+	// access the property of sPuppy
+	document.getElementById("accessedP").innerHTML = "AccessedP: " + sPuppy.cuteness + "<br>";
+	document.getElementById("accessedB").innerHTML = "AccessedB: " + sPuppy["cuteness"] + "<br>";
+	
+	// delete the property of sPuppy
+	delete sPuppy.cuteness;
+	document.getElementById("deleted").innerHTML = "Deleted: " + sPuppy.cuteness + "<br>";
+}
+
+/**********************************************************
  * Gathers data and sets in motion all functions that relate
  * to different ways of creating a puppy.
 **********************************************************/
@@ -9,6 +40,8 @@ function puppyFunctions(){
 	var age      = document.getElementById("age").value;
 	var cuteness = document.getElementById("cuteness").value;
 	var energy   = document.getElementById("energy").value;
+		
+	
 	
 	// 1st object creation: Initialization
 	var pup1 = {
@@ -54,6 +87,7 @@ function puppyFunctions(){
 	var pup3 = Object.create(Puppy3);
 	puppy_3(pup3, name, breed, age, cuteness, energy);
 	document.getElementById("puppy3").innerHTML = pup3.displayDescription();
+
 }
 
 /**********************************************************
