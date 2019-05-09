@@ -109,7 +109,7 @@ function puppyFunctions(){
 }
 
 /**********************************************************
- * Inheritance from Puppy_2
+ * Inheritance from Puppy_2 example
 **********************************************************/
 function inheritance(){
 	Puppy_2.prototype.cost ="";
@@ -119,7 +119,7 @@ function inheritance(){
 	pup2I.displayDescription2 = function() {
 		return this.name + " is a " + this.age 
 		+ " year old " + this.breed + 
-		" who costed: " + this.cost + ".<br>";
+		" who cost: " + this.cost + ".<br>";
 	};
 	document.getElementById("puppy2I").innerHTML = 
 	pup2I.displayDescription2();
