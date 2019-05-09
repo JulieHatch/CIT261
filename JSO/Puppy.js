@@ -75,7 +75,7 @@ function puppyFunctions(){
 		+ "done using instantiation</b><br>" 
 		+ this.name + " is a " + this.age 
 		+ " year old " + this.breed + ".<br>";
-	}
+	};
 	document.getElementById("puppy2").innerHTML = 
 	pup2.displayDescription2();
 	
@@ -122,8 +122,8 @@ function inheritance(){
 		+ "done using instantiation</b><br>" 
 		+ this.name + " is a " + this.age 
 		+ " year old " + this.breed + 
-		" who costed: " this.cost + ".<br>";
-	}
+		" who costed: " + this.cost + ".<br>";
+	};
 	document.getElementById("puppy2I").innerHTML = 
 	pup2I.displayDescription2();
 }
