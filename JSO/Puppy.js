@@ -16,17 +16,26 @@ function demo(){
 		// "Max is a 3 year old Poodle."
 	};
 	
+	// using method
+	document.getElementById("method").innerHTML = 
+	"Method: " + sPuppy.description();
+	
 	// add property to sPuppy
 	sPuppy.cuteness = "very";
-	document.getElementById("added").innerHTML = "Added: " + sPuppy.cuteness + "<br>";
+	document.getElementById("added").innerHTML = 
+	"Added: " + sPuppy.cuteness + "<br>";
 	
 	// access the property of sPuppy
-	document.getElementById("accessedP").innerHTML = "AccessedP: " + sPuppy.cuteness + "<br>";
-	document.getElementById("accessedB").innerHTML = "AccessedB: " + sPuppy["cuteness"] + "<br>";
+	document.getElementById("accessedP").innerHTML = 
+	"AccessedP: " + sPuppy.cuteness + "<br>";
+	
+	document.getElementById("accessedB").innerHTML = 
+	"AccessedB: " + sPuppy["cuteness"] + "<br>";
 	
 	// delete the property of sPuppy
 	delete sPuppy.cuteness;
-	document.getElementById("deleted").innerHTML = "Deleted: " + sPuppy.cuteness + "<br>";
+	document.getElementById("deleted").innerHTML = 
+	"Deleted: " + sPuppy.cuteness + "<br>";
 }
 
 /**********************************************************
