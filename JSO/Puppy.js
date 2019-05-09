@@ -76,7 +76,8 @@ function puppyFunctions(){
 		+ this.name + " is a " + this.age 
 		+ " year old " + this.breed + ".<br>";
 	}
-	document.getElementById("puppy2").innerHTML = pup2.displayDescription2();
+	document.getElementById("puppy2").innerHTML = 
+	pup2.displayDescription2();
 	
 	//3rd object creation: Object.create
 	var Puppy3 = {
@@ -94,29 +95,44 @@ function puppyFunctions(){
 		}
 	};
 	var pup3 = Object.create(Puppy3);
-	puppy_3(pup3, name, breed, age, cuteness, energy);
-	document.getElementById("puppy3").innerHTML = pup3.displayDescription();
+	
+	// Now set the variables to what they should be
+	pup3.name = name;
+	pup3.breed = breed;
+	pup3.age = age;
+	
+	document.getElementById("puppy3").innerHTML =
+	pup3.displayDescription();
+	
+	//Now for inheritance
+	inheritance();
+}
+
+/**********************************************************
+ * Inheritance from Puppy_2
+**********************************************************/
+function inheritance(){
+	Puppy_2.prototype.cost ="";
+	var pup2I = new Puppy_2("Jenny", "Pug", 4);
+	
+	pup2I.cost ="$4.00";
+	
+	pup2I.displayDescription2 = function() {
+		return "<b>2nd object creation is "
+		+ "done using instantiation</b><br>" 
+		+ this.name + " is a " + this.age 
+		+ " year old " + this.breed + 
+		" who costed: " this.cost + ".<br>";
+	}
+	document.getElementById("puppy2I").innerHTML = 
+	pup2I.displayDescription2();
 }
 
 /**********************************************************
  * Constructor for Puppy_2
 **********************************************************/
-function Puppy_2(name, breed, age, cuteness, energy){
+function Puppy_2(name, breed, age){
 	this.name = name;
 	this.breed = breed;
 	this.age = age;
-	this.cuteness = cuteness;
-	this.energy = energy;
-}
-
-/**********************************************************
- * 3rd way to create an object is Object.create() this 
- * function assigns the properties to user inputted variables.
-**********************************************************/
-function puppy_3(pup3, name, breed, age, cuteness, energy){
-	pup3.name = name;
-	pup3.breed = breed;
-	pup3.age = age;
-	pup3.cuteness = cuteness;
-	pup3.energy = energy;
 }
