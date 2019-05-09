@@ -28,13 +28,13 @@ function puppyFunctions(){
 	
 	//2nd object creation: Constructor
 	var pup2 = new Puppy_2(name, breed, age, cuteness, energy);
-	pup2.displayDescription = function() {
+	pup2.displayDescription2 = function() {
 		return "<b>2nd object creation is "
 		+ "done using a constructor</b><br>" 
 		+ this.name + " is a " + this.age 
 		+ " year old " + this.breed + ".";
 	}
-	document.getElementById("puppy2").innerHTML = pup2.displayDescription();
+	document.getElementById("puppy2").innerHTML = pup2.displayDescription2();
 	/*
 	//3rd object creation: Object.create
 	var Puppy3 = {
