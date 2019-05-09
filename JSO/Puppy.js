@@ -21,7 +21,7 @@ function puppyFunctions(){
 			return "<b>1st object creation is "
 			+ "done using initialization</b><br>" 
 			+ this.name + " is a " + this.age 
-			+ " year old " + this.breed + ".";
+			+ " year old " + this.breed + ".<br>";
 		}
 	};
 	document.getElementById("puppy1").innerHTML = pup1.displayDescription();
@@ -32,7 +32,7 @@ function puppyFunctions(){
 		return "<b>2nd object creation is "
 		+ "done using a constructor</b><br>" 
 		+ this.name + " is a " + this.age 
-		+ " year old " + this.breed + ".";
+		+ " year old " + this.breed + ".<br>";
 	}
 	document.getElementById("puppy2").innerHTML = pup2.displayDescription2();
 	
@@ -45,10 +45,10 @@ function puppyFunctions(){
 		cuteness: 'cuteness',
 		energy: 'energy',
 		displayDescription: function() {
-			return "<b>1st object creation is "
-			+ "done using initialization</b><br>" 
+			return "<b>3rd object creation is "
+			+ "done using Object.create()</b><br>" 
 			+ this.name + " is a " + this.age 
-			+ " year old " + this.breed + ".";
+			+ " year old " + this.breed + ".<br>";
 		}
 	};
 	var pup3 = Object.create(Puppy3);
