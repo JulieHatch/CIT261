@@ -35,7 +35,7 @@ function puppyFunctions(){
 		+ " year old " + this.breed + ".";
 	}
 	document.getElementById("puppy2").innerHTML = pup2.displayDescription2();
-	/*
+	
 	//3rd object creation: Object.create
 	var Puppy3 = {
 		// default values for object
@@ -43,10 +43,17 @@ function puppyFunctions(){
 		breed: 'breed',
 		age: 'age',
 		cuteness: 'cuteness',
-		energy: 'energy'
+		energy: 'energy',
+		displayDescription: function() {
+			return "<b>1st object creation is "
+			+ "done using initialization</b><br>" 
+			+ this.name + " is a " + this.age 
+			+ " year old " + this.breed + ".";
+		}
 	};
 	var pup3 = Object.create(Puppy3);
-	puppy_3(pup3, name, breed, age, cuteness, energy);*/
+	puppy_3(pup3, name, breed, age, cuteness, energy);
+	document.getElementById("puppy3").innerHTML = pup3.displayDescription();
 }
 
 /**********************************************************
