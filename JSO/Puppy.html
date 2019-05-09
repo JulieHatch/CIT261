@@ -3,50 +3,47 @@
 <head>
 	<title>Puppy</title>
 	<script src="Puppy.js"></script>
+	<link rel="stylesheet" type="text/css" href="Puppy.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body onload="demo()">
 	<h1 style="text-align:center">JavaScript Objects</h1>
+	<div class="boxBig"style="margin:auto; text-align:auto;"><div class="box" >
+		<div id="info_box">
+			<h3>Please Enter Puppy Attributes:</h3>
+			Name:<br><input id="name"><br>
+			Breed:<br><input id="breed"><br>
+			Age:<br><input id="age"><br>		
+			Cuteness Level:<br><input id="cuteness"><br>
+			Energy Level:<br><input id="energy"><br><br>
+			<button onclick="puppyFunctions();">Display</button>
+		</div><br>
+		<div id="puppyStorage">
+			<b>The ways that the puppy's information was stored
+			and how it was stored:</b>
+			<div id="puppy1"></div><br>
+			<div id="puppy2"></div><br>
+			<div id="puppy3"></div><br>
+		</div>
+	</div></div>
 	
-	<div id="info_box">
-		<h3>Please Enter Puppy Attributes:</h3>
-		Name:<br>
-		<input id="name"><br>
-		Breed:<br>
-		<input id="breed"><br>
-		Age:<br>
-		<input id="age"><br>		
-		Cuteness Level:<br>
-		<input id="cuteness"><br>
-		Energy Level:<br>
-		<input id="energy"><br><br>
-		<button onclick="puppyFunctions();">Display</button>
-	</div><br>
-	
-	<div id="simpleDemo">
-		<h4>Simple Demo of an object and using properties and methods</h4>
-		Please note that this object has pre-coded values that are not
-		from user input.
-		<div id ="method"></div>
-		<div id ="added"></div>
-		<div id ="accessedP"></div>
-		<div id ="accessedB"></div>
-		<div id ="deleted"></div>
-	</div>
-	<br><br>
-	<div id="puppyStorage">
-		<b>The ways that the puppy's information was stored
-		and how it was stored:</b>
-		<div id="puppy1">
-		</div><br>
-		<div id="puppy2">
-		</div><br>
-		<div id="puppy3">
-		</div><br>
-	</div>
-	<div id="Inheritance">
-		<b>This is an example of inheritance:</b><br>
-		<div id="puppy2I">
-		</div><br>
-	</div>
+	<div class="boxBig"style="margin:auto; text-align:auto;"><div class="box" >
+		<div id="simpleDemo">
+			<h4>Simple Demo of an object and using properties and methods</h4>
+			Please note that this object has pre-coded values that are not
+			from user input.
+			<div id ="method"></div>
+			<div id ="added"></div>
+			<div id ="accessedP"></div>
+			<div id ="accessedB"></div>
+			<div id ="deleted"></div>
+		</div>
+		<br><br>
+		
+		<div id="Inheritance">
+			<b>This is an example of inheritance:</b><br>
+			<div id="puppy2I"></div><br>
+		</div>
+	</div></div>
 </body>
 </html>
