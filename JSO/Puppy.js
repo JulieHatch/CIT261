@@ -18,17 +18,26 @@ function puppyFunctions(){
 		cuteness: cuteness,
 		energy: energy,
 		displayDescription: function() {
-			return  "<b>1st object creation is done using initialization</b><br>" 
-			+ this.name + " is a " + this.age + " year old " + this.breed + ".";
+			return "<b>1st object creation is "
+			+ "done using initialization</b><br>" 
+			+ this.name + " is a " + this.age 
+			+ " year old " + this.breed + ".";
 		}
 	};
 	document.getElementById("puppy1").innerHTML = pup1.displayDescription();
-	/*
+	
 	//2nd object creation: Constructor
 	var pup2 = new Puppy_2(name, breed, age, cuteness, energy);
-	
+	pup2.displayDescription2 = function() {
+		return "<b>2nd object creation is "
+		+ "done using a constructor</b><br>" 
+		+ this.name + " is a " + this.age 
+		+ " year old " + this.breed + ".";
+	}
+	/*
 	//3rd object creation: Object.create
 	var Puppy3 = {
+		// default values for object
 		name: 'name',
 		breed: 'breed',
 		age: 'age',
@@ -48,10 +57,17 @@ function Puppy_2(name, breed, age, cuteness, energy){
 	this.age = age;
 	this.cuteness = cuteness;
 	this.energy = energy;
+	displayDescription: function() {
+			return "<b>1st object creation is "
+			+ "done using initialization</b><br>" 
+			+ this.name + " is a " + this.age 
+			+ " year old " + this.breed + ".";
+		};
 }
 
 /**********************************************************
- * 3rd way to create an object is Object.create
+ * 3rd way to create an object is Object.create() this 
+ * function assigns the properties to user inputted variables.
 **********************************************************/
 function puppy_3(pup3, name, breed, age, cuteness, energy){
 	pup3.name = name;
