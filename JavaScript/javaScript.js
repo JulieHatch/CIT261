@@ -141,4 +141,11 @@ function arrayed(){
 	
 	// I would not recommend associative Arrays
 	// Here is an example of an associative array
+	var dog =[];
+	dog["breed"] = "Lab";
+	dog["name"]  = "Max";
+	/* To access them you must use their indexes, you can no longer use
+       normal loops or commands that other arrays are allowed to use.  */
+	document.getElementById("aArray").innerHTML = 
+		dog["name"] + " is a " + dog["breed"] + ".";
 }
