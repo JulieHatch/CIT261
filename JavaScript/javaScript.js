@@ -62,8 +62,7 @@ function condStatment(){
 	if (i == 2){
 		document.getElementById("sElse").innerHTML = 
 		"Conditional statement, \"if (i == 2)\", is true.";
-	}
-	else{
+	}else{
 		document.getElementById("sElse").innerHTML = 
 		"Conditional statement, \"if (i == 2)\", is false.";
 	}
@@ -72,13 +71,11 @@ function condStatment(){
 	if (i == 2){
 		document.getElementById("sElseIf").innerHTML = 
 		"Conditional statement, \"if (i == 2)\", is true.";
-	}
-    else if(i == 1){
+	}else if(i == 1){
 		document.getElementById("sElseIf").innerHTML = 
 		"Conditional statement, \"if (i == 2)\", is false."+
 		"However, conditional statement, \"if (i == 1)\", is true.";
-	}
-	else{
+	}else{
 		document.getElementById("sElseIf").innerHTML = 
 		"Conditional statement, \"if (i == 2)\", is false."+
 		"and conditional statement, \"if (i == 1)\", is false.";
