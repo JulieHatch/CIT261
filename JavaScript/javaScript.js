@@ -68,7 +68,7 @@ function condStatment(){
 	}else{
 		sElsei = "Conditional statement, \"if (i == 2)\", is false.";
 	}
-	document.getElementById("sElse").innerHTML = sElsei;
+	document.getElementById("sElse").innerHTML = "ersrf";
 	
 	// This is a simple example of else if statements
 	if (i == 2){
