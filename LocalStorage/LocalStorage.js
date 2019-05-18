@@ -7,7 +7,7 @@ function start(){
 	localStorage.color;
 	document.getElementById("dFood").innerHTML = 
 	sessionStorage.food;*/
-	var stored= JSON.parse(sessionStorage.getItem("items"));
+	var stored= JSON.parse(sessionStorage.getItem('name'));
 	document.getElementById("arrayEx").innerHTML = stored;
 	
 }
@@ -38,9 +38,9 @@ function setArray(){
 	var bird = document.getElementById("bird").value;
 	var bear = document.getElementById("bear").value;
 	
-	var animals = ["dog", "cat", "bird", "bear"];
+	var animals = ['dog', 'cat', 'bird', 'bear'];
 	// store in session storage
-	sessionStorage.setItem("items", JSON.stringify(animals));
+	sessionStorage.setItem('name', JSON.stringify(animals));
 	start();
 }
 
