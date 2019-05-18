@@ -1,6 +1,6 @@
 /**********************************************************
- * Simple examples of how to use for loops, while loops,
- * and do while loops. Nothing really exciting.
+ * The function that sets off the rest of the functions for
+ * this page.
 **********************************************************/
 function start(){
 	looper();
