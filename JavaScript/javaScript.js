@@ -52,7 +52,7 @@ function condStatment(){
 	var j = 2;
 	var k = 3;
 	var sIf = "";
-	var sElsei = "r";
+	var sElse = "";
 	var sElseIf = "";
 	var sSwitch = "";
 	
@@ -64,39 +64,38 @@ function condStatment(){
 	
 	// This is a simple example of an else statement
 	if (i == 2){
-		sElsei = "Conditional statement, \"if (i == 2)\", is true.";
+		sElse = "Conditional statement, \"if (i == 2)\", is true.";
 	}else{
-		sElsei = "Conditional statement, \"if (i == 2)\", is false.";
+		sElse = "Conditional statement, \"if (i == 2)\", is false.";
 	}
-	document.getElementById("sElse").innerHTML = "ersrf";
+	document.getElementById("sElse").innerHTML = sElse;
 	
 	// This is a simple example of else if statements
 	if (i == 2){
 		sElseIf = "Conditional statement, \"if (i == 2)\", is true.";
 	}else if(i == 1){
-		document.getElementById("sElseIf").innerHTML = 
-		"Conditional statement, \"if (i == 2)\", is false."+
+		sElseIf = "Conditional statement, \"if (i == 2)\", is false."+
 		"However, conditional statement, \"if (i == 1)\", is true.";
 	}else{
-		document.getElementById("sElseIf").innerHTML = 
-		"Conditional statement, \"if (i == 2)\", is false."+
+		sElseIf = "Conditional statement, \"if (i == 2)\", is false."+
 		"and conditional statement, \"if (i == 1)\", is false.";
 	}
 	document.getElementById("sElseIf").innerHTML = sElseIf;
+	
 	// This is a simple example of a switch statement
 	switch (i){
 		case 0:
-			document.getElementById("sSwitch").innerHTML = "oops";
+			sSwitch = "oops";
 			break;
 		case 1:
-			document.getElementById("sSwitch").innerHTML = 
-			"Case 1 was true!";
+			sSwitch = "Case 1 was true!";
 			break;
 		case 2:
-			document.getElementById("sSwitch").innerHTML = "oops";
+			sSwitch = "oops";
 			break;
 		case 3:
-			document.getElementById("sSwitch").innerHTML = "oops";
+			sSwitch = "oops";
 			break;
 	}
+	document.getElementById("sSwitch").innerHTML = sSwitch;
 }
