@@ -74,10 +74,10 @@ function condStatment(){
 		sElseIf = "Conditional statement, \"if (i == 2)\", is true.";
 	}else if(i == 1){
 		sElseIf = "Conditional statement, \"if (i == 2)\", is false."+
-		"However, conditional statement, \"if (i == 1)\", is true.";
+		" However, conditional statement, \"if (i == 1)\", is true.";
 	}else{
 		sElseIf = "Conditional statement, \"if (i == 2)\", is false."+
-		"and conditional statement, \"if (i == 1)\", is false.";
+		" and conditional statement, \"if (i == 1)\", is false.";
 	}
 	document.getElementById("sElseIf").innerHTML = sElseIf;
 	
@@ -100,8 +100,8 @@ function condStatment(){
 }
 
 /**********************************************************
- * Simple examples of how to use for arrays. Nothing 
- * really exciting.
+ * Simple examples of how to use and manipulate arrays.
+ * Also includes simple example of an associative array.
 **********************************************************/
 function arrayed(){
 	// Declare variables
@@ -139,13 +139,17 @@ function arrayed(){
 	}
 	document.getElementById("arrayLoop2").innerHTML = arrayLoop2;
 	
-	// I would not recommend associative Arrays
 	// Here is an example of an associative array
+	// Initial declaration
 	var dog =[];
+	
+	// Set named indexes
 	dog["breed"] = "Lab";
 	dog["name"]  = "Max";
+	
 	/* To access them you must use their indexes, you can no longer use
        normal loops or commands that other arrays are allowed to use.  */
 	document.getElementById("aArray").innerHTML = 
 		dog["name"] + " is a " + dog["breed"] + ".";
+	// I would not currently recommend using Associative Arrays
 }
