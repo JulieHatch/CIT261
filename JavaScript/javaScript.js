@@ -108,7 +108,7 @@ function arrayed(){
 	var arrayLoop       = "";
 	var arrayAddElement = "";
 	var arrayLoop2      = "";
-	var aArrays         = "";
+	var aArray         = "";
 	var i               = 0;
 	
 	// Declare a simple array
