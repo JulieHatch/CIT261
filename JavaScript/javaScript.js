@@ -125,7 +125,7 @@ function arrayed(){
 		else
 			arrayLoop += birds[i] +".";
 	}
-	document.getElementById("arrayLoop").innerHTML = arrayLoop;
+	
 	// Add a element to the array
 	birds[4]="pigeon";
 	
@@ -137,7 +137,6 @@ function arrayed(){
 		else
 			arrayLoop2 += birds[i] +".";
 	}
-	document.getElementById("arrayLoop2").innerHTML = arrayLoop2;
 	
 	// Here is an example of an associative array
 	// Initial declaration
@@ -148,8 +147,21 @@ function arrayed(){
 	dog["name"]  = "Max";
 	
 	/* To access them you must use their indexes, you can no longer use
-       normal loops or commands that other arrays are allowed to use.  */
-	document.getElementById("aArray").innerHTML = 
+       normal loops or commands that other arrays are allowed to use.  
+	
+	   I would not currently recommend using Associative Arrays*/
+	
+	// Just to show how to use parameters
+	displayArrays(arrayLoop, arrayLoop2, dog);
+}
+
+/**********************************************************
+ * Simple functions shows how to use parameters for 
+ * JavaScript functions.
+**********************************************************/
+function displayArrays(arrayLoop, arrayLoop2, dog){
+	document.getElementById("arrayLoop").innerHTML  = arrayLoop;
+	document.getElementById("arrayLoop2").innerHTML = arrayLoop2;
+	document.getElementById("aArray").innerHTML     = 
 		dog["name"] + " is a " + dog["breed"] + ".";
-	// I would not currently recommend using Associative Arrays
 }
