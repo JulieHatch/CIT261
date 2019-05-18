@@ -3,18 +3,17 @@
  * this page.
 **********************************************************/
 function start(){
-	/*document.getElementById("dColor").innerHTML = 
+	document.getElementById("dColor").innerHTML = 
 	localStorage.color;
 	document.getElementById("dFood").innerHTML = 
-	sessionStorage.food;*/
+	sessionStorage.food;
 	var stored = JSON.parse(sessionStorage.getItem('named'));
 	document.getElementById("arrayEx").innerHTML = stored;
 	
 	var storedStory = JSON.parse(localStorage.getItem('story'));
 	document.getElementById("objectEx").innerHTML = 
 	storedStory.name + " was in " + storedStory.place + " eating " +
-	storedStory.food+" with " + storedStory.aName + ".";
-	
+	storedStory.aFood+" with " + storedStory.aName + ".";
 }
 
 /**********************************************************
@@ -27,8 +26,8 @@ function setFavorites(){
 	var food  = document.getElementById("food").value;
 	
 	// now store variables
-	//localStorage.color  = color;
-	//sessionStorage.food = food;
+	localStorage.color  = color;
+	sessionStorage.food = food;
 	start();
 }
 
