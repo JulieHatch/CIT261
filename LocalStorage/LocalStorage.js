@@ -3,10 +3,10 @@
  * this page.
 **********************************************************/
 function start(){
-	document.getElementById("dColor").innerHTML = 
+	/*document.getElementById("dColor").innerHTML = 
 	localStorage.color;
 	document.getElementById("dFood").innerHTML = 
-	sessionStorage.food;
+	sessionStorage.food;*/
 	var stored= JSON.parse(sessionStorage.getItem("items"));
 	document.getElementById("arrayEx").innerHTML = stored;
 	
@@ -22,8 +22,8 @@ function setFavorites(){
 	var food  = document.getElementById("food").value;
 	
 	// now store variables
-	localStorage.color  = color;
-	sessionStorage.food = food;
+	//localStorage.color  = color;
+	//sessionStorage.food = food;
 	start();
 }
 
@@ -38,7 +38,7 @@ function setArray(){
 	var bird = document.getElementById("bird").value;
 	var bear = document.getElementById("bear").value;
 	
-	var animals = [dog, cat, bird, bear];
+	var animals = ["dog", "cat", "bird", "bear"];
 	// store in session storage
 	sessionStorage.setItem("items", JSON.stringify(animals));
 	start();
