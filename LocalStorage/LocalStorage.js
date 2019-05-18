@@ -48,7 +48,7 @@ function setArray(){
  * This function sets an object based on user input and 
  * stores the object in local storage.
 **********************************************************/
-function setArray(){
+function setObject(){
 	// set variables
 
 	start();
