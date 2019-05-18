@@ -52,7 +52,7 @@ function condStatment(){
 	var j = 2;
 	var k = 3;
 	var sIf = "";
-	var sElse = "r";
+	var sElsei = "r";
 	var sElseIf = "";
 	var sSwitch = "";
 	
@@ -64,16 +64,15 @@ function condStatment(){
 	
 	// This is a simple example of an else statement
 	if (i == 2){
-		sElse = "Conditional statement, \"if (i == 2)\", is true.";
+		sElsei = "Conditional statement, \"if (i == 2)\", is true.";
 	}else{
-		sElse = "Conditional statement, \"if (i == 2)\", is false.";
+		sElsei = "Conditional statement, \"if (i == 2)\", is false.";
 	}
-	document.getElementById("sElse").innerHTML = sElse;
+	document.getElementById("sElse").innerHTML = sElsei;
 	
 	// This is a simple example of else if statements
 	if (i == 2){
-		document.getElementById("sElseIf").innerHTML = 
-		"Conditional statement, \"if (i == 2)\", is true.";
+		sElseIf = "Conditional statement, \"if (i == 2)\", is true.";
 	}else if(i == 1){
 		document.getElementById("sElseIf").innerHTML = 
 		"Conditional statement, \"if (i == 2)\", is false."+
