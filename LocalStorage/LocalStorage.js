@@ -8,7 +8,7 @@ function start(){
 	document.getElementById("dFood").innerHTML = 
 	sessionStorage.food;
 	document.getElementById("arrayEx").innerHTML = 
-	JSON.parse(sessionStorage.getItem("animals"));
+	JSON.parse(sessionStorage.getObj("items"));
 }
 
 /**********************************************************
@@ -32,14 +32,14 @@ function setFavorites(){
 **********************************************************/
 function setArray(){
 	// set variables
-	var dog = document.getElementById("dog").value;
+	var dog  = document.getElementById("dog").value;
 	var cat  = document.getElementById("cat").value;
 	var bird = document.getElementById("bird").value;
-	var bear  = document.getElementById("bear").value;
+	var bear = document.getElementById("bear").value;
 	
 	var animals = [dog, cat, bird, bear];
 	// store in session storage
-	sessionStorage.setItem("animals", JSON.stringify(animals));
+	sessionStorage.setObj("items", JSON.stringify(animals));
 	start();
 }
 
@@ -51,4 +51,10 @@ function setArray(){
 	// set variables
 
 	start();
+}
+Storage.prototype.setObj = function(key, obj) {
+    return this.setItem(key, JSON.stringify(obj))
+}
+Storage.prototype.getObj = function(key) {
+    return JSON.parse(this.getItem(key))
 }
