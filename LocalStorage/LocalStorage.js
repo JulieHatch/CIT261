@@ -7,8 +7,12 @@ function start(){
 	localStorage.color;
 	document.getElementById("dFood").innerHTML = 
 	sessionStorage.food;*/
-	var stored= JSON.parse(sessionStorage.getItem('name'));
+	var stored = JSON.parse(sessionStorage.getItem('name'));
 	document.getElementById("arrayEx").innerHTML = stored;
+	var storedStory = JSON.parse(sessionStorage.getItem('story'));
+	document.getElementById("arrayEx").innerHTML = 
+	storedStory.name+" was in "+ storedStory.place + " eating " +
+	" with " + storedStory.aName + ".";
 	
 }
 
@@ -38,18 +42,37 @@ function setArray(){
 	var bird = document.getElementById("bird").value;
 	var bear = document.getElementById("bear").value;
 	
+	// create an array out of user variables.
 	var animals = [dog, cat, bird, bear];
 	// store in session storage
 	sessionStorage.setItem('name', JSON.stringify(animals));
+	
+	// display what data was stored
 	start();
 }
 
 /**********************************************************
- * This function sets an object based on user input and 
+ * This function creates an object based on user input and 
  * stores the object in local storage.
 **********************************************************/
 function setObject(){
 	// set variables
-
+	var name  = document.getElementById("name").value;
+	var place = document.getElementById("place").value;
+	var aFood = document.getElementById("aFood").value;
+	var aName = document.getElementById("aName").value;
+	
+	// create an array out of user variables.
+	var story = {
+		name: name, 
+		place: place, 
+		aFood: aFood,
+		aName: aName
+	};
+	
+	// store in local storage
+	localStorage.setItem('story', JSON.stringify(story));
+	
+	// display what data was stored
 	start();
 }
