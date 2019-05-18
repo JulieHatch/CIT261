@@ -38,7 +38,7 @@ function setArray(){
 	var bird = document.getElementById("bird").value;
 	var bear = document.getElementById("bear").value;
 	
-	var animals = ['dog', 'cat', 'bird', 'bear'];
+	var animals = [dog, cat, bird, bear];
 	// store in session storage
 	sessionStorage.setItem('name', JSON.stringify(animals));
 	start();
