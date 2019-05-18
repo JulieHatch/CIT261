@@ -52,7 +52,7 @@ function condStatment(){
 	var j = 2;
 	var k = 3;
 	var sIf = "";
-	var sElse = "";
+	var sElse = "r";
 	var sElseIf = "";
 	var sSwitch = "";
 	
@@ -83,7 +83,7 @@ function condStatment(){
 		"Conditional statement, \"if (i == 2)\", is false."+
 		"and conditional statement, \"if (i == 1)\", is false.";
 	}
-	
+	document.getElementById("sElseIf").innerHTML = sElseIf;
 	// This is a simple example of a switch statement
 	switch (i){
 		case 0:
