@@ -39,7 +39,7 @@ function setArray(){
 	
 	var animals = [dog, cat, bird, bear];
 	// store in session storage
-	sessionStorage.setObj("items", JSON.stringify(animals));
+	window.sessionStorage.setObj("items", JSON.stringify(animals));
 	start();
 }
 
