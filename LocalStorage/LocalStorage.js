@@ -3,9 +3,9 @@
  * this page.
 **********************************************************/
 function start(){
-	document.getElementById("color").innerHTML = 
+	document.getElementById("dColor").innerHTML = 
 	sessionStorage.color;
-	document.getElementById("food").innerHTML = 
+	document.getElementById("dFood").innerHTML = 
 	localStorage.food;
 }
 
