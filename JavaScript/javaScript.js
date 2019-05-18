@@ -157,7 +157,8 @@ function arrayed(){
 
 /**********************************************************
  * Simple functions shows how to use parameters for 
- * JavaScript functions.
+ * JavaScript functions. This function displays arrays for
+ * arrayed();
 **********************************************************/
 function displayArrays(arrayLoop, arrayLoop2, dog){
 	document.getElementById("arrayLoop").innerHTML  = arrayLoop;
