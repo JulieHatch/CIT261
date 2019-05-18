@@ -19,6 +19,7 @@ function looper(){
 	//This is a simple while loop
 	while (i<4){
 		stuffWhile+= "Looped through while loop" + i + " times.<br>";
+		i++;
 	}
 	document.getElementById("lWhile").innerHTML = stuffWhile;
 	i=0; // reset i
@@ -26,8 +27,9 @@ function looper(){
 	//This is a simple do while loop
 	do{
 		stuffDoWhile+= "Looped through do while loop" + i + " times.<br>";
+		i++;
 	}
-	while();
+	while(i<=3);
 	document.getElementById("lDoWhile").innerHTML = stuffDoWhile;
 }
 
