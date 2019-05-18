@@ -54,7 +54,7 @@ function condStatment(){
 	
 	// This is a simple if statement
 	if (i == 1){
-		document.getElementById("sIF").innerHTML = 
+		document.getElementById("sIf").innerHTML = 
 		"Conditional statement, \"if (i == 1)\", is true.";
 	}
 	
