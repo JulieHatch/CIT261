@@ -5,6 +5,7 @@
 function start(){
 	looper();
 	condStatment();
+	arrayed();
 }
 
 /**********************************************************
@@ -12,7 +13,7 @@ function start(){
  * and do while loops. Nothing really exciting.
 **********************************************************/
 function looper(){
-	//declare variables
+	// Declare variables
 	var i;
 	var stuffFor     = "";
 	var stuffWhile   = "";
@@ -47,12 +48,10 @@ function looper(){
  * such as if, else, else if, and switch statements.
 **********************************************************/
 function condStatment(){
-	//declare variables
-	var i = 1;
-	var j = 2;
-	var k = 3;
-	var sIf = "";
-	var sElse = "";
+	// Declare variables
+	var i       = 1;
+	var sIf     = "";
+	var sElse   = "";
 	var sElseIf = "";
 	var sSwitch = "";
 	
@@ -98,4 +97,48 @@ function condStatment(){
 			break;
 	}
 	document.getElementById("sSwitch").innerHTML = sSwitch;
+}
+
+/**********************************************************
+ * Simple examples of how to use for arrays. Nothing 
+ * really exciting.
+**********************************************************/
+function arrayed(){
+	// Declare variables
+	var arrayLoop       = "";
+	var arrayAddElement = "";
+	var arrayLoop2      = "";
+	var aArrays         = "";
+	var i               = 0;
+	
+	// Declare a simple array
+	var birds   = ["dove", "chicken", "turkey", "parrot"];
+	
+	// Display a single element of the array
+	document.getElementById("arrayElement").innerHTML = birds[0];
+	
+	// Loop through simple array
+	for (i=0; i < birds.length; i++){
+		// Look a combination of all I need to learn
+		if (i != birds.length-1)
+			arrayLoop += birds[i] +", ";
+		else
+			arrayLoop += birds[i] +".";
+	}
+	document.getElementById("arrayLoop").innerHTML = arrayLoop;
+	// Add a element to the array
+	birds[4]="pigeon";
+	
+	// Loop through simple array
+	for (i=0; i < birds.length; i++){
+		// Look a combination of all I need to learn
+		if (i != birds.length-1)
+			arrayLoop2 += birds[i] +", ";
+		else
+			arrayLoop2 += birds[i] +".";
+	}
+	document.getElementById("arrayLoop2").innerHTML = arrayLoop2;
+	
+	// I would not recommend associative Arrays
+	// Here is an example of an associative array
 }
