@@ -7,8 +7,9 @@ function start(){
 	localStorage.color;
 	document.getElementById("dFood").innerHTML = 
 	sessionStorage.food;
-	document.getElementById("arrayEx").innerHTML = 
-	JSON.parse(sessionStorage.getItem("items"));
+	var stored= JSON.parse(sessionStorage.getItem("items"));
+	document.getElementById("arrayEx").innerHTML = stored;
+	
 }
 
 /**********************************************************
