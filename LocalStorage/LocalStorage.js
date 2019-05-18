@@ -4,9 +4,9 @@
 **********************************************************/
 function start(){
 	document.getElementById("dColor").innerHTML = 
-	sessionStorage.color;
+	localStorage.color;
 	document.getElementById("dFood").innerHTML = 
-	localStorage.food;
+	sessionStorage.food;
 }
 
 /**********************************************************
@@ -19,7 +19,7 @@ function setFavorites(){
 	var food  = document.getElementById("food").value;
 	
 	// now store variables
-	sessionStorage.color = color;
-	localStorage.food    = food;
+	localStorage.color = color;
+	sessionStorage.food    = food;
 	start();
 }
