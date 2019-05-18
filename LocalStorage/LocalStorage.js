@@ -7,12 +7,13 @@ function start(){
 	localStorage.color;
 	document.getElementById("dFood").innerHTML = 
 	sessionStorage.food;*/
-	var stored = JSON.parse(sessionStorage.getItem('name'));
+	var stored = JSON.parse(sessionStorage.getItem('named'));
 	document.getElementById("arrayEx").innerHTML = stored;
-	var storedStory = JSON.parse(sessionStorage.getItem('story'));
-	document.getElementById("arrayEx").innerHTML = 
-	storedStory.name+" was in "+ storedStory.place + " eating " +
-	" with " + storedStory.aName + ".";
+	
+	var storedStory = JSON.parse(localStorage.getItem('story'));
+	document.getElementById("objectEx").innerHTML = 
+	storedStory.name + " was in " + storedStory.place + " eating " +
+	storedStory.food+" with " + storedStory.aName + ".";
 	
 }
 
@@ -45,7 +46,7 @@ function setArray(){
 	// create an array out of user variables.
 	var animals = [dog, cat, bird, bear];
 	// store in session storage
-	sessionStorage.setItem('name', JSON.stringify(animals));
+	sessionStorage.setItem('named', JSON.stringify(animals));
 	
 	// display what data was stored
 	start();
@@ -62,7 +63,7 @@ function setObject(){
 	var aFood = document.getElementById("aFood").value;
 	var aName = document.getElementById("aName").value;
 	
-	// create an array out of user variables.
+	// create an object out of user variables.
 	var story = {
 		name: name, 
 		place: place, 
