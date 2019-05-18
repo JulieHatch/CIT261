@@ -8,7 +8,7 @@ function start(){
 	document.getElementById("dFood").innerHTML = 
 	sessionStorage.food;
 	document.getElementById("arrayEx").innerHTML = 
-	JSON.parse(sessionStorage.getObj("items"));
+	JSON.parse(sessionStorage.getItem("items"));
 }
 
 /**********************************************************
@@ -39,7 +39,7 @@ function setArray(){
 	
 	var animals = [dog, cat, bird, bear];
 	// store in session storage
-	window.sessionStorage.setObj("items", JSON.stringify(animals));
+	sessionStorage.setItem("items", JSON.stringify(animals));
 	start();
 }
 
@@ -51,10 +51,4 @@ function setArray(){
 	// set variables
 
 	start();
-}
-Storage.prototype.setObj = function(key, obj) {
-    return this.setItem(key, JSON.stringify(obj))
-}
-Storage.prototype.getObj = function(key) {
-    return JSON.parse(this.getItem(key))
 }
