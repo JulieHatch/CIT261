@@ -73,11 +73,11 @@ header{
 	transition: border-radius 2s, width 2s, height 2s, background 2s;
 	border-radius: 50px;
 }
-.shapeEx:hover{
+.comboSimpleEx:hover{
 	border-radius: 0px;
-	background: red;
 	width: 200px;
 	height: 200px;
+	background: red;
 }
 
 /*Gives an example of what happens when transition time is set to zero*/
