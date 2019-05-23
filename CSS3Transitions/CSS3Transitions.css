@@ -33,12 +33,13 @@ header{
 	height: 100px;
 	border-radius: 50px;
 	background: blue;
-	transition-property: width, height;
+	transition-property: width, height, border-radius;
 	transition-duration: 1.5s;
 }
 .growthEx:hover{
 	width: 200px;
 	height: 200px;
+	border-radius: 100px;
 }
 
 /*Shows a shape changing color*/
@@ -85,11 +86,11 @@ header{
 	width: 100px;
 	height: 100px;
 	background: blue;
-	transition: border-radius 0s;
+	transition: background 0s;
 	border-radius: 50px;	
 }
 .wrongEx:hover{
-	border-radius: 0px;
+	background: red;
 }
 
 /*Gives an example of a long transition 4 seconds*/
@@ -97,11 +98,11 @@ header{
 	width: 100px;
 	height: 100px;
 	background: blue;
-	transition: border-radius 4s;
+	transition: background 4s;
 	border-radius: 50px;		
 }
 .longEx:hover{
-	border-radius: 0px;
+	background: red;
 }
 
 /*Gives an example of delayed transition*/
@@ -109,12 +110,12 @@ header{
 	width: 100px;
 	height: 100px;
 	background: blue;
-	transition: border-radius 2s;
+	transition: background 2s;
 	transition-delay: 2s;
 	border-radius: 50px;			
 }
 .delayEx:hover{
-	border-radius: 0px;
+	background: red;
 }
 
 /*Gives an example of a linear transition*/
@@ -122,12 +123,12 @@ header{
 	width: 100px;
 	height: 100px;
 	background: blue;
-	transition: border-radius 1.5s;
+	transition: background 1.5s;
 	border-radius: 50px;	
 	transition-timing-function: linear;	
 }
 .linearEx:hover{
-	border-radius: 0px;
+	background: red;
 }
 
 /*Gives an example of an ease transition*/
@@ -135,12 +136,12 @@ header{
 	width: 100px;
 	height: 100px;
 	background: blue;
-	transition: border-radius 1.5s;
+	transition: background 1.5s;
 	border-radius: 50px;
 	transition-timing-function: ease;	
 }
 .easeEx:hover{
-	border-radius: 0px;
+	background: red;
 }
 
 /*Gives an example of an ease-in transition*/
@@ -148,12 +149,12 @@ header{
 	width: 100px;
 	height: 100px;
 	background: blue;
-	transition: border-radius 1.5s;
+	transition: background 1.5s;
 	border-radius: 50px;
 	transition-timing-function: ease-in;
 }
 .easeInEx:hover{
-	border-radius: 0px;
+	background: red;
 }
 
 /*Gives an example of an ease-out transition*/
@@ -161,12 +162,12 @@ header{
 	width: 100px;
 	height: 100px;
 	background: blue;
-	transition: border-radius 1.5s;
+	transition: background 1.5s;
 	border-radius: 50px;
 	transition-timing-function: ease-out;
 }
 .easeOutEx:hover{
-	border-radius: 0px;
+	background: red;
 }
 
 /*Gives an example of an ease-in-out transition*/
@@ -174,10 +175,10 @@ header{
 	width: 100px;
 	height: 100px;
 	background: blue;
-	transition: border-radius 1.5s;
+	transition: background 1.5s;
 	border-radius: 50px;
 	transition-timing-function: ease-in-out;
 }
 .easeInOutEx:hover{
-	border-radius: 0px;
+	background: red;
 }
