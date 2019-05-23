@@ -74,7 +74,7 @@ header{
 	transition: border-radius 2s, width 2s, height 2s, background 2s;
 	border-radius: 50px;
 }
-.comboSimpleEx:target{
+.comboSimpleEx:hover{
 	border-radius: 0px;
 	width: 200px;
 	height: 200px;
