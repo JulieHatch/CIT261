@@ -25,3 +25,159 @@ body {
 header{
 	 font-size:150%;
 }
+/*These are the transitions that use for this assignment*/
+
+/*Shows a shape growing on the x and y axis*/
+.growthEx{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background: blue;
+	transition-property: width, height;
+	transition-duration: 1.5s;
+}
+.growthEx:hover{
+	width: 200px;
+	height: 200px;
+}
+
+/*Shows a shape changing color*/
+.colorEx{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	border-radius: 50px;
+	transition: background 1.5s;
+}
+.colorEx:hover{
+	background: red;
+}
+
+/*Shows a shape changing it's shape*/
+.shapeEx{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	transition: border-radius 1.5s;
+	border-radius: 50px;
+}
+.shapeEx:hover{
+	border-radius: 0px;
+}
+
+/*A combination of the first few examples preceding this example*/
+.comboSimpleEx{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	transition: border-radius 2s, width 2s, height 2s, background 2s;
+	border-radius: 50px;
+}
+.shapeEx:hover{
+	border-radius: 0px;
+	background: red;
+	width: 200px;
+	height: 200px;
+}
+
+/*Gives an example of what happens when transition time is set to zero*/
+.wrongEx{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	transition: border-radius 0s;
+	border-radius: 50px;	
+}
+.wrongEx:hover{
+	border-radius: 0px;
+}
+
+/*Gives an example of a long transition 4 seconds*/
+.longEx{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	transition: border-radius 4s;
+	border-radius: 50px;		
+}
+.longEx:hover{
+	border-radius: 0px;
+}
+
+/*Gives an example of delayed transition*/
+.delayEx{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	transition: border-radius 2s;
+	transition-delay: 2s;
+	border-radius: 50px;			
+}
+.delayEx:hover{
+	border-radius: 0px;
+}
+
+/*Gives an example of a linear transition*/
+.linearEx{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	transition: border-radius 1.5s;
+	border-radius: 50px;	
+	transition-timing-function: linear;	
+}
+.linearEx:hover{
+	border-radius: 0px;
+}
+
+/*Gives an example of an ease transition*/
+.easeEx{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	transition: border-radius 1.5s;
+	border-radius: 50px;
+	transition-timing-function: ease;	
+}
+.easeEx:hover{
+	border-radius: 0px;
+}
+
+/*Gives an example of an ease-in transition*/
+.easeInEx{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	transition: border-radius 1.5s;
+	border-radius: 50px;
+	transition-timing-function: ease-in;
+}
+.easeInEx:hover{
+	border-radius: 0px;
+}
+
+/*Gives an example of an ease-out transition*/
+.easeOutEx{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	transition: border-radius 1.5s;
+	border-radius: 50px;
+	transition-timing-function: ease-out;
+}
+.easeOutEx:hover{
+	border-radius: 0px;
+}
+
+/*Gives an example of an ease-in-out transition*/
+.easeInOutEx{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	transition: border-radius 1.5s;
+	border-radius: 50px;
+	transition-timing-function: ease-in-out;
+}
+.easeInOutEx:hover{
+	border-radius: 0px;
+}
