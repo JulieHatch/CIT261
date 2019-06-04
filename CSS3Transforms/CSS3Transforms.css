@@ -1,0 +1,30 @@
+body {
+	padding: 0px;
+	margin:0px;
+	background-color: #333;
+	font-family:verdana;
+	color:white;
+	text-align:center;
+}
+.box {
+	background-color: #f1f1f1;
+	margin: 10px;
+	max-width:1200px;
+	padding:10px;
+	text-align:left;
+	border-radius: 25px;
+}
+.boxBig {
+	background-color: black;
+	margin: 10px;
+	max-width:750px;
+	padding: 10px;
+	color:black;
+	border-radius: 35px;
+}
+header{
+	 font-size:150%;
+}
+/*These are the transforms that I use for this assignment*/
+
+/*Shows a shape growing on the x and y axis*/
