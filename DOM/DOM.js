@@ -7,7 +7,7 @@ function sCreateEx(){
 	var sCreateEx = document.getElementById("sCreateEx");
 	
 	// create the element
-	var created   = document.createElement("span");
+	var created       = document.createElement("span");
 	created.innerHTML = " This text was added after you clicked the button!";
 	
 	// add the new element to div tag with id ="sCreateEx"
@@ -45,4 +45,22 @@ function sDeleteEx(){
 	
 	// delete the element
 	sDeleteEx.removeChild(deleteMe);
+}
+
+/**********************************************************
+ * This function shows a simple example of how to replace an
+ * element.
+**********************************************************/
+function sReplaceEx(){
+	// Declare and assign variables
+	var sReplaceEx = document.getElementById("sReplaceEx");
+	var replaceMe  = document.getElementById("replaceMe");
+	
+	// create an the element
+	var replacedBy  = document.createElement("div");
+	var newText     = document.createTextNode("This is new text!!!");
+	replacedBy.appendChild(newText);
+	
+	// replace the element
+	sReplaceEx.replaceChild(replacedBy, replaceMe);
 }
