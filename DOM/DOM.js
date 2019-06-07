@@ -32,3 +32,15 @@ function sInsertEx(){
     sInsertEx.insertBefore(iCreated, sInsertEx.childNodes[sInsertNum]);
 }
 
+/**********************************************************
+ * This function shows a simple example of how to delete an
+ * element.
+**********************************************************/
+function sDeleteEx(){
+	// Declare and assign variables
+	var sDeleteEx = document.getElementById("sDeleteEx");
+	var deleteMe  = document.getElementById("deleteMe");
+	
+	// delete the element
+	sDeleteEx.removeChild(deleteMe);
+}

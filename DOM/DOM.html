@@ -12,14 +12,14 @@
 		<h2 style="text-align:center;">Examples of createElement & appendChild</h2>
 		<hr><br>
 		Click the button to make text apear through the createElement and appendChild.<br>
-		<button onclick="sCreateEx()">Simple Create Element</button><br>
-		<div id="sCreateEx">It will apear here:</div>
+		<br><button style="margin:auto;" onclick="sCreateEx()">Create</button><br>
+		<br><div id="sCreateEx">It will apear here:</div>
 		<br>
 	</div></div>
 	<br><br>
 	<div class="boxBig"style="margin:auto; text-align:auto;"><div class="box">
 		<h2 style="text-align:center;">Examples of insertBefore</h2>
-		<b>Enter where you would like the item to be placed:</b><br>
+		<b>Enter where you would like the item to be placed before:</b><br>
 		<input id="sInsertNum"><br>
 		<b>Enter what you would like the item to be:<br></b>
 		<input id="sInsertItem"><br>
@@ -34,8 +34,11 @@
 	<div class="boxBig"style="margin:auto; text-align:auto;"><div class="box">
 		<h2 style="text-align:center;">Examples of removeChild</h2>
 		<hr><br>
-		<div id="sCreateEx">It will apear here:</div>
-		<b>A 0 second transition:</b><br><br>
+		Click the button to make text below dissapear.<br>
+		<br><button style="margin:auto;" onclick="sDeleteEx()">Delete</button><br>
+		<br><div id="sDeleteEx">
+			<p id="deleteMe">This is the text that will disapear once you click the button!</p>
+		</div><br>
 		
 	</div></div>
 </body>
