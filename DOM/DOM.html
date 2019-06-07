@@ -12,19 +12,20 @@
 		<h2 style="text-align:center;">Examples of createElement & appendChild</h2>
 		<hr><br>
 		Click the button to make text apear through the createElement and appendChild.<br>
-		<br><button style="margin:auto;" onclick="sCreateEx()">Create</button><br>
+		<br><button style="display: block; margin: 0 auto;" onclick="sCreateEx()">Create</button><br>
 		<br><div id="sCreateEx">It will apear here:</div>
 		<br>
 	</div></div>
 	<br><br>
 	<div class="boxBig"style="margin:auto; text-align:auto;"><div class="box">
 		<h2 style="text-align:center;">Examples of insertBefore</h2>
-		<b>Enter where you would like the item to be placed before:</b><br>
+		<hr><br>
+		Enter where you would like the item to be placed before:<br>
 		<input id="sInsertNum"><br>
-		<b>Enter what you would like the item to be:<br></b>
+		Enter what you would like the item to be:<br>
 		<input id="sInsertItem"><br>
-		<button onclick="sInsertEx()">Add to list</button>
-		THE LIST:<br>
+		<button onclick="sInsertEx()">Add to list</button><br><br>
+		<b>The list:</b><br>
 		<ol id="sInsertEx">
 		  <li>Item here</li>
 		  <li>Item there</li>
@@ -35,9 +36,9 @@
 		<h2 style="text-align:center;">Examples of removeChild</h2>
 		<hr><br>
 		Click the button to make text below dissapear.<br>
-		<br><button style="margin:auto;" onclick="sDeleteEx()">Delete</button><br>
+		<br><button style="display: block; margin: 0 auto;" onclick="sDeleteEx()">Delete</button><br>
 		<br><div id="sDeleteEx">
-			<p id="deleteMe">This is the text that will disapear once you click the button!</p>
+			<div id="deleteMe"><br>This is the text that will disapear once you click the button!</div>
 		</div><br>
 		
 	</div></div>
