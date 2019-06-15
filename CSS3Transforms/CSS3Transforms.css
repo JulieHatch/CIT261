@@ -111,7 +111,7 @@ div#xyScale {
 	width: 50px;
 	height: 50px;
 	background-color: #72aabf;
-	transform: scale(40px, 40px);
+	transform: scale(1.2, 1.2);
 }
 
 /*Shows a shape scaling on the x axis*/
@@ -119,7 +119,7 @@ div#xScale {
 	width: 50px;
 	height: 50px;
 	background-color: #72aabf;
-	transform: scaleX(40px);
+	transform: scaleX(1.2);
 }
 
 /*Shows a shape scaling on the y axis*/
@@ -127,9 +127,8 @@ div#yScale {
 	width: 50px;
 	height: 50px;
 	background-color: #72aabf;
-	transform: scaleY(40px);
+	transform: scaleY(1.2);
 }
-
 
 /*Shows a shape skewing on the x and y axis*/
 div#xySkew {
