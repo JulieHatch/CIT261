@@ -96,3 +96,52 @@ div#zRotate {
 	background-color: #72aabf;
 	transform: rotateZ(50deg);
 }
+
+/*Shows a shape scaling on the x and y axis*/
+div#xyScale {
+	width: 50px;
+	height: 50px;
+	background-color: #72aabf;
+	transform: scale(10px, 10px);
+}
+
+/*Shows a shape scaling on the x axis*/
+div#xScale {
+	width: 50px;
+	height: 50px;
+	background-color: #72aabf;
+	transform: scaleX(10px);
+}
+
+/*Shows a shape scaling on the y axis*/
+div#yScale {
+	width: 50px;
+	height: 50px;
+	background-color: #72aabf;
+	transform: scaleY(10px);
+}
+
+
+/*Shows a shape skewing on the x and y axis*/
+div#xySkew {
+	width: 50px;
+	height: 50px;
+	background-color: #72aabf;
+	transform: skew(10px, 10px);
+}
+
+/*Shows a shape skewing on the x axis*/
+div#xSkew {
+	width: 50px;
+	height: 50px;
+	background-color: #72aabf;
+	transform: skewX(10px);
+}
+
+/*Shows a shape skewing on the y axis*/
+div#ySkew {
+	width: 50px;
+	height: 50px;
+	background-color: #72aabf;
+	transform: skewY(10px);
+}
