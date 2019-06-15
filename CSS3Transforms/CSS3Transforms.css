@@ -25,6 +25,36 @@ body {
 header{
 	 font-size:150%;
 }
-/*These are the transforms that I use for this assignment*/
+/*These are the boxes for transforming*/
 
 /*Shows a shape growing on the x and y axis*/
+div#2DRotate {
+	width: 150px;
+	height: 150px;
+	background-color: yellow;
+	transform: rotate(50deg);
+}
+
+/*Shows a shape growing on the x and y axis*/
+div#xRotate {
+	width: 150px;
+	height: 150px;
+	background-color: yellow;
+	transform: rotateX(50deg);
+}
+
+/*Shows a shape growing on the x and y axis*/
+div#yRotate {
+	width: 150px;
+	height: 150px;
+	background-color: yellow;
+	transform: rotateY(50deg);
+}
+
+/*Shows a shape growing on the x and y axis*/
+div#zRotate {
+	width: 150px;
+	height: 150px;
+	background-color: yellow;
+	transform: rotateZ(50deg);
+}
