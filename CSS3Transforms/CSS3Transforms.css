@@ -25,6 +25,15 @@ body {
 header{
 	 font-size:150%;
 }
+
+/*Shows the shape before transformations*/
+div#3DTranslate {
+	width: 50px;
+	height: 50px;
+	background-color: #72aabf;
+	transform: translate3d(10px, 10px, 10px);
+}
+
 /*Shows a shape translating in 3D*/
 div#3DTranslate {
 	width: 50px;
@@ -102,7 +111,7 @@ div#xyScale {
 	width: 50px;
 	height: 50px;
 	background-color: #72aabf;
-	transform: scale(10px, 10px);
+	transform: scale(40px, 40px);
 }
 
 /*Shows a shape scaling on the x axis*/
@@ -110,7 +119,7 @@ div#xScale {
 	width: 50px;
 	height: 50px;
 	background-color: #72aabf;
-	transform: scaleX(10px);
+	transform: scaleX(40px);
 }
 
 /*Shows a shape scaling on the y axis*/
@@ -118,7 +127,7 @@ div#yScale {
 	width: 50px;
 	height: 50px;
 	background-color: #72aabf;
-	transform: scaleY(10px);
+	transform: scaleY(40px);
 }
 
 
@@ -127,7 +136,7 @@ div#xySkew {
 	width: 50px;
 	height: 50px;
 	background-color: #72aabf;
-	transform: skew(10px, 10px);
+	transform: skew(10deg, 10deg);
 }
 
 /*Shows a shape skewing on the x axis*/
@@ -135,7 +144,7 @@ div#xSkew {
 	width: 50px;
 	height: 50px;
 	background-color: #72aabf;
-	transform: skewX(10px);
+	transform: skewX(10deg);
 }
 
 /*Shows a shape skewing on the y axis*/
@@ -143,5 +152,5 @@ div#ySkew {
 	width: 50px;
 	height: 50px;
 	background-color: #72aabf;
-	transform: skewY(10px);
+	transform: skewY(10deg);
 }
