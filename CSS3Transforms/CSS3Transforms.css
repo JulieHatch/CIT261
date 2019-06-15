@@ -31,7 +31,6 @@ div#control {
 	width: 50px;
 	height: 50px;
 	background-color: #72aabf;
-	transform: translate3d(10px, 10px, 10px);
 }
 
 /*Shows a shape translating in 3D*/
