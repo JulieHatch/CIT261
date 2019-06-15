@@ -32,13 +32,19 @@ div#control {
 	height: 50px;
 	background-color: #72aabf;
 }
-
-/*Shows a shape translating in 3D*/
-div#3DTranslated {
+/*Shows the shape before transformations*/
+div#translate3D {
 	width: 50px;
 	height: 50px;
 	background-color: #72aabf;
 }
+
+/*Shows a shape translating in 3D
+div#translate3D {
+	width: 50px;
+	height: 50px;
+	background-color: #72aabf;
+}*/
 
 /*Shows a shape translating on the x and y axis*/
 div#xyTranslate {
