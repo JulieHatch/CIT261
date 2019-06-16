@@ -32,7 +32,7 @@ div#control {
 	height: 50px;
 	background-color: #72aabf;
 }
-/*Shows the shape before transformations*/
+/*Shows the shape translating in 3D*/
 div#translate3D {
 	width: 50px;
 	height: 50px;
@@ -72,16 +72,7 @@ div#zTranslate {
 	transform: translateZ(10px);
 }
 
-/*Shows a shape rotating on center point clockwise
-div#2DRotate {
-	width: 50px;
-	height: 50px;
-	background-color: #72aabf;
-	transform: rotate(50deg);
-}
-*/
-
-/*Shows the shape before transformations*/
+/*Shows the shape rotating on center point clockwise*/
 div#rotate2D {
 	width: 50px;
 	height: 50px;
