@@ -86,6 +86,7 @@ div#rotate2D {
 	width: 50px;
 	height: 50px;
 	background-color: #72aabf;
+	transform: rotate(50deg);
 }
 
 /*Shows a shape rotating on the x axis*/
