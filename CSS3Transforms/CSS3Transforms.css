@@ -40,13 +40,6 @@ div#translate3D {
 	transform: translate3D(10px, 30px, 30px);
 }
 
-/*Shows a shape translating in 3D
-div#translate3D {
-	width: 50px;
-	height: 50px;
-	background-color: #72aabf;
-}*/
-
 /*Shows a shape translating on the x and y axis*/
 div#xyTranslate {
 	width: 50px;
@@ -84,7 +77,7 @@ div#2DRotate {
 	width: 50px;
 	height: 50px;
 	background-color: #72aabf;
-	transform: rotate(50deg);
+	/*transform: rotate(50deg);*/
 }
 
 /*Shows a shape rotating on the x axis*/
