@@ -27,4 +27,41 @@ header{
 }
 /*These are the animations that I use for this assignment*/
 
-/*Shows a shape growing on the x and y axis*/
+/*An animation where growth occurs*/
+@keyframes grow {
+	from	{width: 10px; height: 10px;}
+	to		{width: 50px; height: 50px;}
+}
+/*A shape that will be animated to grow*/
+#grow {
+	width: 10px;
+	height: 10px;
+	background: #3c576d;
+	animation: grow 3s infinite;
+}
+
+/*An animation where color change occurs*/
+@keyframes color {
+	0%		{background: #3c576d;}
+	100%	{background: #ef8a1f;}
+}
+/*A shape that will be animated to change color*/
+#color {
+	width: 10px;
+	height: 10px;
+	background: #3c576d;
+	animation: color 3s infinite;
+}
+
+/*An animation where movement occurs*/
+@keyframes move {
+	0%		{left: 0px;}
+	100%	{left: 100px;}
+}
+/*A shape that will be animated to move*/
+#move {
+	width: 10px;
+	height: 10px;
+	background: #3c576d;
+	animation: move 3s infinite;
+}
