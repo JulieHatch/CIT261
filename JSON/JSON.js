@@ -22,6 +22,6 @@ function puppyFunction(){
 	parsedObject = JSON.parse(stringifiedObject);
 	
 	// display the object in a sentence for the user.
-	document.getElementById("parsed").innerHTML = stringifiedObject.name 
+	document.getElementById("parsed").innerHTML = parsedObject.name 
 	+ " is a " + parsedObject.age + " year old " + parsedObject.breed + ".";
 }
