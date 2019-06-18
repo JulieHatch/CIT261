@@ -29,13 +29,13 @@ header{
 
 /*An animation where growth occurs*/
 @keyframes grow {
-	from	{width: 10px; height: 10px;}
-	to		{width: 50px; height: 50px;}
+	from	{width: 50px; height: 50px;}
+	to		{width: 100px; height: 100px;}
 }
 /*A shape that will be animated to grow*/
 #grow {
-	width: 10px;
-	height: 10px;
+	width: 50px;
+	height: 50px;
 	background: #3c576d;
 	animation: grow 3s infinite;
 }
@@ -47,8 +47,8 @@ header{
 }
 /*A shape that will be animated to change color*/
 #color {
-	width: 10px;
-	height: 10px;
+	width: 50px;
+	height: 50px;
 	background: #3c576d;
 	animation: color 3s infinite;
 }
@@ -60,8 +60,9 @@ header{
 }
 /*A shape that will be animated to move*/
 #move {
-	width: 10px;
-	height: 10px;
+	width: 50px;
+	height: 50px;
 	background: #3c576d;
+	position: relative;
 	animation: move 3s infinite;
 }
