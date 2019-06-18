@@ -80,3 +80,48 @@ header{
 	position: relative;
 	animation: combo 3s infinite;
 }
+
+/*A shape that will be animated to change color using linear timing function*/
+#linear {
+	width: 50px;
+	height: 50px;
+	background: #3c576d;
+	animation: color 3s infinite;
+	animation-timing-function: linear;
+}
+
+/*A shape that will be animated to change color using ease timing function*/
+#ease {
+	width: 50px;
+	height: 50px;
+	background: #3c576d;
+	animation: color 3s infinite;
+	animation-timing-function: ease;
+}
+
+/*A shape that will be animated to change color using ease-in timing function*/
+#ease-in {
+	width: 50px;
+	height: 50px;
+	background: #3c576d;
+	animation: color 3s infinite;
+	animation-timing-function: ease-in;
+}
+
+/*A shape that will be animated to change color using ease-out timing function*/
+#ease-out {
+	width: 50px;
+	height: 50px;
+	background: #3c576d;
+	animation: color 3s infinite;
+	animation-timing-function: ease-out;
+}
+
+/*A shape that will be animated to change color using ease-in-out timing function*/
+#ease-in-out {
+	width: 50px;
+	height: 50px;
+	background: #3c576d;
+	animation: color 3s infinite;
+	animation-timing-function: ease-in-out;
+}
