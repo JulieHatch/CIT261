@@ -66,3 +66,17 @@ header{
 	position: relative;
 	animation: move 3s infinite;
 }
+
+/*An animation where movement, color change, and growth occurs*/
+@keyframes combo {
+	0%		{left: 0px; background: #3c576d; width: 50px; height: 50px;}
+	100%	{left: 100px; background: #ef8a1f; width: 100px; height: 100px;}
+}
+/*A shape that will be animated to move, change color, and grow*/
+#combo {
+	width: 50px;
+	height: 50px;
+	background: #3c576d;
+	position: relative;
+	animation: combo 3s infinite;
+}
