@@ -37,7 +37,7 @@ header{
 	width: 50px;
 	height: 50px;
 	background: #3c576d;
-	animation: color 3s 3;
+	animation: animation 3s 3;
 }
 /*Makes it possible for the user to pause the animation by hovering over it.*/
 #animation:hover{
@@ -46,13 +46,13 @@ header{
 
 /*An transition*/
 /*Shows a shape changing color*/
-.transition{
+#transition{
 	width: 100px;
 	height: 100px;
-	background: blue;
+	background: #3c576d;
 	border-radius: 50px;
 	transition: background 1.5s;
 }
-.transition:hover{
-	background: red;
+#transition:hover{
+	background: #ef8a1f;
 }
