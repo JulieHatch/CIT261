@@ -30,7 +30,8 @@ header{
 /*An animation where color change occurs*/
 @keyframes animation {
 	0%		{background: #3c576d;}
-	100%	{background: #ef8a1f;}
+	50%		{background: #ef8a1f;}
+	100%	{background: #3c576d;}
 }
 /*A shape that will be animated to change color*/
 #animation {
