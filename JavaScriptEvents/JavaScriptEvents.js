@@ -10,8 +10,8 @@ function changing(){
 /**********************************************************
  * Will display some text when the user clicks text.
 **********************************************************/
-function click(){
-	document.getElementById("click").innerHTML = "You clicked the text!";
+function clicking(){
+	document.getElementById("clicked").innerHTML = "You clicked the text!";
 }
 
 /**********************************************************
