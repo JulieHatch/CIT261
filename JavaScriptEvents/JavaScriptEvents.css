@@ -34,9 +34,10 @@ header{
 }
 /*A shape that will be animated to change color*/
 #animation {
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	background: #3c576d;
+	border-radius: 50px;
 	animation: animation 3s 3;
 }
 /*Makes it possible for the user to pause the animation by hovering over it.*/
