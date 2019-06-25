@@ -87,21 +87,42 @@ function colorPauseResume(){
 
 /**********************************************************
  * Allows the user to pause and resume an Animation that 
- * changes a shapes color
-*********************************************************
-function colorPauseResume(){
+ * changes a shapes shape
+**********************************************************/
+function shapePauseResume(){
 	// Grab and set the values I will be using.
-	var circle     = document.getElementById('animation');
-	var buttonAnim = document.getElementById('buttonAnim');
+	var circle     		= document.getElementById('animShape');
+	var buttonShapeAnim = document.getElementById('buttonShapeAnim');
 	
 	// checks if it is running or paused then changes play 
 	// state and button text
-	if (buttonAnim.innerHTML == 'Pause'){
+	if (buttonShapeAnim.innerHTML == 'Pause'){
 		circle.style.animationPlayState = 'paused';
-		buttonAnim.innerHTML            = "Resume";
+		buttonShapeAnim.innerHTML       = "Resume";
 	}
 	else {
 		circle.style.animationPlayState = 'running';
-		buttonAnim.innerHTML            = "Pause";
+		buttonShapeAnim.innerHTML       = "Pause";
 	}
-}*/
+}
+
+/**********************************************************
+ * Allows the user to pause and resume an Animation that 
+ * changes a shapes color and shape
+**********************************************************/
+function comboPauseResume(){
+	// Grab and set the values I will be using.
+	var circle     		= document.getElementById('animCombo');
+	var buttonComboAnim = document.getElementById('buttonComboAnim');
+	
+	// checks if it is running or paused then changes play 
+	// state and button text
+	if (buttonComboAnim.innerHTML == 'Pause'){
+		circle.style.animationPlayState = 'paused';
+		buttonComboAnim.innerHTML       = "Resume";
+	}
+	else {
+		circle.style.animationPlayState = 'running';
+		buttonComboAnim.innerHTML       = "Pause";
+	}
+}

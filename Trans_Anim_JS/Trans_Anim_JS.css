@@ -43,6 +43,38 @@ header{
 	animation-play-state: running;
 }
 
+/*An animation where shape change occurs*/
+@keyframes animShape {
+	0%		{border-radius: 50px;}
+	50%		{border-radius: 0px;}
+	100%	{border-radius: 50px;}
+}
+/*A shape that will be animated to change shape*/
+#animShape {
+	width: 100px;
+	height: 100px;
+	background: #3c576d;
+	border-radius: 50px;
+	animation: animShape 3s infinite;
+	animation-play-state: running;
+}
+
+/*An animation where shape and color change occurs*/
+@keyframes animCombo {
+	0%		{border-radius: 50px; background: #3c576d;}
+	50%		{border-radius: 0px;  background: #ef8a1f;}
+	100%	{border-radius: 50px; background: #3c576d;}
+}
+/*A shape that will be animated to change shape*/
+#animCombo {
+	width: 100px;
+	height: 100px;
+	background: #3c576d;
+	border-radius: 50px;
+	animation: animCombo 3s infinite;
+	animation-play-state: running;
+}
+
 /*Transitions*/
 /*Shows a shape changing color*/
 #transition{
