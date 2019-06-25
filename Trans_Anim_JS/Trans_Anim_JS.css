@@ -40,6 +40,7 @@ header{
 	background: #3c576d;
 	border-radius: 50px;
 	animation: animation 3s infinite;
+	animation-play-state: running;
 }
 
 /*An transition*/
@@ -50,9 +51,7 @@ header{
 	background: #3c576d;
 	border-radius: 50px;
 	transition: background 1.5s;
-}
-#transition#change{
-	background: #ef8a1f;
+	
 }
 
 
