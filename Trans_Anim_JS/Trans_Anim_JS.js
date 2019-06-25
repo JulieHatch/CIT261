@@ -41,6 +41,29 @@ function shapeTrans(){
 }
 
 /**********************************************************
+ * Starts the Transition, the transition changes shape from
+ * circle to square or square to circle upon user's request.
+**********************************************************/
+function comboTrans(){
+	// Grab and set the values I will be using.
+	var circle        = document.getElementById('transCombo');
+	var butComboTrans = document.getElementById('butComboTrans');
+	
+	// check if it is a circle or a square then changes the shape
+	// and the button text
+	if (butComboTrans.innerHTML == 'Blue Circle'){
+		circle.style.borderRadius = '50px';
+		circle.style.backgroundColor = '#ef8a1f';
+		butComboTrans.innerHTML   = "Orange Square";
+	}
+	else {
+		circle.style.borderRadius    = '0px';
+		circle.style.backgroundColor = '#3c576d';
+		butComboTrans.innerHTML      = "Blue Circle";
+	}
+}
+
+/**********************************************************
  * Allows the user to pause and resume an Animation that 
  * changes a shapes color
 **********************************************************/
