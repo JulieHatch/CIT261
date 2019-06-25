@@ -43,15 +43,24 @@ header{
 	animation-play-state: running;
 }
 
-/*An transition*/
+/*A transition*/
 /*Shows a shape changing color*/
 #transition{
 	width: 100px;
 	height: 100px;
 	background: #3c576d;
 	border-radius: 50px;
-	transition: background 1.5s;
-	
+	transition: background 3s;
+}
+
+/*A transition*/
+/*Shows a shape changing shape*/
+#transition{
+	width: 100px;
+	height: 100px;
+	background: #3c576d;
+	border-radius: 50px;
+	transition: border-radius 3s;
 }
 
 
