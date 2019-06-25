@@ -25,7 +25,7 @@ function colorTrans(){
 **********************************************************/
 function shapeTrans(){
 	// Grab and set the values I will be using.
-	var circle        = document.getElementById('transition');
+	var circle        = document.getElementById('transShape');
 	var butShapeTrans = document.getElementById('butShapeTrans');
 	
 	// check if it is a circle or a square then changes the shape

@@ -55,7 +55,7 @@ header{
 
 /*A transition*/
 /*Shows a shape changing shape*/
-#transition{
+#transShape{
 	width: 100px;
 	height: 100px;
 	background: #3c576d;
