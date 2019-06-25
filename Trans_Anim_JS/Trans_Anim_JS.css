@@ -68,7 +68,7 @@ header{
 	height: 100px;
 	background: #3c576d;
 	border-radius: 50px;
-	transition: background, border-radius 3s;
+	transition: background 3s, border-radius 3s;
 }
 
 

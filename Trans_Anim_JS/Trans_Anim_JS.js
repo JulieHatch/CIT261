@@ -54,12 +54,12 @@ function comboTrans(){
 	// changes the shape, color, and the button text
 	if (butComboTrans.innerHTML == 'Blue Circle'){
 		circle.style.borderRadius    = '50px';
-		circle.style.backgroundColor = '#ef8a1f';
+		circle.style.backgroundColor = '#3c576d';
 		butComboTrans.innerHTML      = "Orange Square";
 	}
 	else {
 		circle.style.borderRadius    = '0px';
-		circle.style.backgroundColor = '#3c576d';
+		circle.style.backgroundColor = '#ef8a1f';
 		butComboTrans.innerHTML      = "Blue Circle";
 	}
 }
