@@ -27,11 +27,11 @@ function pauseResume(){
 	var buttonAnim = document.getElementById('buttonAnim');
 	
 	if (buttonAnim.innerHTML == 'Pause'){
-		circle.style.animationPlayState = 'pause';
+		circle.style.animationPlayState = 'paused';
 		buttonAnim.innerHTML            = "Resume";
 	}
 	else {
-		circle.style.animationPlayState = '#running';
+		circle.style.animationPlayState = 'running';
 		buttonAnim.innerHTML            = "Pause";
 	}
 }
