@@ -20,11 +20,12 @@ function changeClass(){
  * This function toggles a class of a div.
 **********************************************************/
 function toggleClass(){
-	if(document.getElementById("toggleClass").className == "basicClass"){
-		document.getElementById("toggleClass").className = "";
+	thisClass = document.getElementById("toggleClass");
+	if(thisClass.className == "basicClass"){
+		thisClass.className = "";
 	}
 	else {
-		document.getElementById("toggleClass").className = "basicClass";
+		thisClass.className = "basicClass";
 	}
 	
 	/*************************************
