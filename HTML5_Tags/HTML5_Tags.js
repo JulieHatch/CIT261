@@ -87,7 +87,7 @@ function addSingleCircle(){
 	var x = document.getElementById("simpleCircle").getContext("2d");
 	
 	// Now add the circle to the canvas
-	x = beginPath();
+	x.beginPath();
 	x.arc(30, 30, 20, 0, 2*Math.PI);
 	x.fillStyle = "orange";
 	x.fill();
@@ -114,7 +114,7 @@ function addCircle(){
 	var x = document.getElementById("addShapes").getContext("2d");
 	
 	// Now add the circle to the canvas
-	x = beginPath();
+	x.beginPath();
 	x.arc(30, 30, 20, 0, 2*Math.PI);
 	x.fill();
 }
