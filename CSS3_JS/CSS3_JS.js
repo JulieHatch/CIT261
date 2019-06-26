@@ -52,7 +52,7 @@ function removeClass(){
  * This function changes a class's color
 **********************************************************/
 function changeColorClass(){
-	document.getElementById("changeColorClass").className.style.backgroundColor
+	document.getElementById("changeColorClass").style.backgroundColor
 	= "#ef8a1f";
 }
 
@@ -61,7 +61,7 @@ function changeColorClass(){
  * square to a circle
 **********************************************************/
 function changeShapeClass(){
-	document.getElementById("changeShapeClass").className.style.borderRadius
+	document.getElementById("changeShapeClass").style.borderRadius
 	= "50px";
 }
 
