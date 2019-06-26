@@ -12,14 +12,38 @@
 	<div class="boxBig"style="margin:auto; text-align:auto;"><div class="box">
 		<h2 style="text-align:center;">Video</h2>
 		<hr><br>
-		<br>
+		<b>Default Controls:</b><br><br>
+		<video controls>
+			<source src="" type="video/mp4">
+		</video>
+		
+		<b>My own created Controls:</b><br><br>
+		<video id="video">
+			<source src="" type="video/mp4">
+		</video>
+		<button onclick="playVideo()">Play</button> 
+		<button onclick="pauseVideo()">Pause</button> 
+		<button id="videoMuteBut" onclick="muteVideo()">Mute</button><br>
+		
 	</div></div>
 	<br><br>
 	
 	<div class="boxBig"style="margin:auto; text-align:auto;"><div class="box">
 		<h2 style="text-align:center;">Audio</h2>
 		<hr><br>
-		<b>A 0 second transition:</b><br><br>
+		<b>Default Controls:</b><br><br>
+		<audio controls>
+			<source src="" type="audio/mpeg">
+		</audio>
+		
+		<b>My own created Controls:</b><br><br>
+		<audio id="audio">
+			<source src="" type="audio/mpeg">
+		</audio>
+		<button onclick="playAudio()">Play</button> 
+		<button onclick="pauseAudio()">Pause</button> 
+		<button id="audioMuteBut" onclick="muteAudio()">Mute</button><br>
+		
 		
 	</div></div>
 	<br><br>
