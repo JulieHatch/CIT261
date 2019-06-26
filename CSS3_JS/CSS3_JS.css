@@ -35,6 +35,5 @@ header{
 }
 
 .secondClass {
-	border-color: Black;
-	border: 10px;
+	border: 10px solid black;
 }
