@@ -98,7 +98,7 @@ function addSingleCircle(){
 **********************************************************/
 function addText(){
 	// Declare and set variables
-	var userText = document.getElementById("addText").value;
+	var userText = document.getElementById("textCanvas").value;
 	var canvas = document.getElementById("addedText").getContext("2d");
 	
 	// Now add the text to the canvas
