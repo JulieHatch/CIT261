@@ -47,3 +47,52 @@ function addSecondClass(){
 function removeClass(){
 	document.getElementById("removeClass").classList.remove("basicClass");
 }
+
+/**********************************************************
+ * This function changes a class's color
+**********************************************************/
+function changeColorClass(){
+	document.getElementById("changeColorClass").className.style.backgroundColor
+	= "#ef8a1f";
+}
+
+/**********************************************************
+ * This function changes a class's shape from a rounded
+ * square to a circle
+**********************************************************/
+function changeShapeClass(){
+	document.getElementById("changeShapeClass").className.style.borderRadius
+	= "50px";
+}
+
+/**********************************************************
+ * This function adds an animation
+**********************************************************/
+function addAnim(){
+	document.getElementById("addAnim").classList.add("animation");
+}
+
+/**********************************************************
+ * This function changes a class's animation color
+*********************************************************
+function changeColorAnim(){
+	document.getElementById("changeColorAnim").className.style.backgroundColor
+	= "#ef8a1f";
+}
+*/
+
+/**********************************************************
+ * This function adds a transition
+**********************************************************/
+function addTrans(){
+	document.getElementById("addTrans").classList.add("transition");
+}
+
+/**********************************************************
+ * This function changes a class's transition color
+*********************************************************
+function changeColorTrans(){
+	document.getElementById("changeColorTrans").className.style.backgroundColor
+	= "#ef8a1f";
+}
+*/

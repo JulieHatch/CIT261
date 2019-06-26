@@ -26,7 +26,7 @@ header{
 	 font-size:150%;
 }
 
-/*An animation*/
+/****************Animations****************/
 /*An animation where color change occurs*/
 @keyframes animation {
 	0%		{background: #3c576d;}
@@ -75,7 +75,7 @@ header{
 	animation-play-state: running;
 }
 
-/*Transitions*/
+/****************Transitions****************/
 /*Shows a shape changing color*/
 #transition{
 	width: 100px;
