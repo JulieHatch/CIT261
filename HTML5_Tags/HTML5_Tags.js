@@ -84,7 +84,7 @@ function muteAudio(){
 **********************************************************/
 function addSingleCircle(){
 	// Declare and set variables
-	var x = document.getElementById("addShapeCanvas").getContext("2d");
+	var x = document.getElementById("simpleCircle").getContext("2d");
 	
 	// Now add the circle to the canvas
 	x = beginPath();
@@ -111,7 +111,7 @@ function addText(){
 **********************************************************/
 function addCircle(){
 	// Declare and set variables
-	var x = document.getElementById("addShapesCanvas").getContext("2d");
+	var x = document.getElementById("addShapes").getContext("2d");
 	
 	// Now add the circle to the canvas
 	x = beginPath();
@@ -125,7 +125,7 @@ function addCircle(){
 **********************************************************/
 function addSquare(){
 	// Declare and set variables
-	var x = document.getElementById("addShapesCanvas").getContext("2d");
+	var x = document.getElementById("addShapes").getContext("2d");
 	
 	// Now add the square to the canvas
 	x.beginPath();
@@ -140,7 +140,7 @@ function addSquare(){
 **********************************************************/
 function addLine(){
 	// Declare and set variables
-	var x = document.getElementById("addShapesCanvas").getContext("2d");
+	var x = document.getElementById("addShapes").getContext("2d");
 	
 	// Now add the line to the canvas
 	x.beginPath();
