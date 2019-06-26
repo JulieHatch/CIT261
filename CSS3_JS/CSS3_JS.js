@@ -13,7 +13,7 @@ function addClass(){
  * This function changes class of a div tag.
 **********************************************************/
 function changeClass(){
-	document.getElementById("aClass").className = "secondClass";
+	document.getElementById("aClass").className = "newClass";
 }
 
 /**********************************************************
@@ -22,7 +22,7 @@ function changeClass(){
 function toggleClass(){
 	thisClass = document.getElementById("toggleClass");
 	if(thisClass.className == "basicClass"){
-		thisClass.className = "";
+		thisClass.className = "newClass";
 	}
 	else {
 		thisClass.className = "basicClass";
@@ -38,22 +38,12 @@ function toggleClass(){
  * This function adds a second class to a div tag with a class.
 **********************************************************/
 function addSecondClass(){
-	document.getElementById("twoClass").className += "secondClass";
-	
-	/*************************************
-	* OR I COULD DO IT THIS WAY:
-	* document.getElementById("twoClass").classList.add("secondClass");
-	*************************************/
+	document.getElementById("twoClass").classList.add("secondClass");
 }
 
 /**********************************************************
  * This function removes a class when the user requests it.
 **********************************************************/
 function removesClass(){
-	document.getElementById("removeClass").className = "";
-	
-	/*************************************
-	* OR I COULD DO IT THIS WAY:
-	* document.getElementById("removeClass").classList.remove("basicClass");
-	*************************************/
+	document.getElementById("removeClass").classList.remove("basicClass");
 }
