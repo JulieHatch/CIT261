@@ -44,6 +44,6 @@ function addSecondClass(){
 /**********************************************************
  * This function removes a class when the user requests it.
 **********************************************************/
-function removesClass(){
+function removeClass(){
 	document.getElementById("removeClass").classList.remove("basicClass");
 }
