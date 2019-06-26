@@ -25,6 +25,16 @@ body {
 header{
 	 font-size:150%;
 }
-/*These are the animations that I use for this assignment*/
 
 /*Shows a shape growing on the x and y axis*/
+.basicClass {
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	background-color: #3c576d;
+}
+
+.secondClass {
+	border-color: Black;
+	border: 10px;
+}
