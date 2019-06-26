@@ -79,3 +79,73 @@ function muteAudio(){
 }
 
 /**********************Canvas Functions**********************/
+/**********************************************************
+ * Adds a circle to a canvas tag
+**********************************************************/
+function addSingleCircle(){
+	// Declare and set variables
+	var x = document.getElementById("addShapeCanvas").getContext("2d");
+	
+	// Now add the circle to the canvas
+	x = beginPath();
+	x.arc(30, 30, 20, 0, 2*Math.PI);
+	x.fillStyle = "orange";
+	x.fill();
+}
+
+/**********************************************************
+ * Adds text from user input to a canvas tag
+**********************************************************/
+function addText(){
+	// Declare and set variables
+	var userText = document.getElementById("addText").value;
+	var canvas = document.getElementById("addedText").getContext("2d");
+	
+	// Now add the text to the canvas
+	canvas.fillText(userText, 25, 50);
+}
+
+/**********************************************************
+ * Adds a circle to a canvas tag with a possibility of 
+ * having multiple shapes
+**********************************************************/
+function addCircle(){
+	// Declare and set variables
+	var x = document.getElementById("addShapesCanvas").getContext("2d");
+	
+	// Now add the circle to the canvas
+	x = beginPath();
+	x.arc(30, 30, 20, 0, 2*Math.PI);
+	x.fill();
+}
+
+/**********************************************************
+ * Adds a square to a canvas tag with a possibility of 
+ * having multiple shapes
+**********************************************************/
+function addSquare(){
+	// Declare and set variables
+	var x = document.getElementById("addShapesCanvas").getContext("2d");
+	
+	// Now add the square to the canvas
+	x.beginPath();
+	x.rect(50, 50, 20, 20);
+	x.fillStyle = "red";
+	x.fill();
+}
+
+/**********************************************************
+ * Adds a line to a canvas tag with a possibility of 
+ * having multiple shapes
+**********************************************************/
+function addLine(){
+	// Declare and set variables
+	var x = document.getElementById("addShapesCanvas").getContext("2d");
+	
+	// Now add the line to the canvas
+	x.beginPath();
+	x.moveTo(100, 100);
+	x.lineTo(40, 40);
+	x.strokeStyle = "blue";
+	x.stroke();
+}
