@@ -53,7 +53,7 @@ header{
 	50%		{background: #ef8a1f;}
 	100%	{background: #3c576d;}
 }
-/*A shape that will be animated to change color*/
+/* Animated color change*/
 .animation {
 	animation: animation 3s infinite;
 }
@@ -62,7 +62,7 @@ header{
 .transition{
 	transition: background 3s;
 }
-/*Activated by hovering*/
+/*Transition activated by hovering*/
 .transition:hover {
 	background: #ef8a1f;
 }

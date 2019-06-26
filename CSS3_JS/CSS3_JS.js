@@ -73,26 +73,8 @@ function addAnim(){
 }
 
 /**********************************************************
- * This function changes a class's animation color
-*********************************************************
-function changeColorAnim(){
-	document.getElementById("changeColorAnim").className.style.backgroundColor
-	= "#ef8a1f";
-}
-*/
-
-/**********************************************************
  * This function adds a transition
 **********************************************************/
 function addTrans(){
 	document.getElementById("addTrans").classList.add("transition");
 }
-
-/**********************************************************
- * This function changes a class's transition color
-*********************************************************
-function changeColorTrans(){
-	document.getElementById("changeColorTrans").className.style.backgroundColor
-	= "#ef8a1f";
-}
-*/
