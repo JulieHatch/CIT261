@@ -1,8 +1,7 @@
 const aws = require('aws-sdk');
 
 let s3 = new aws.S3({
-  accessKeyId: process.env.S3_KEY,
-  secretAccessKey: process.env.S3_SECRET
+  accessKeyId: process.env.key
 });
 /**********************************************************
  * Gets the current weather of a specific zip code 
@@ -15,6 +14,6 @@ function getWeather(){
 	
 	var mykey = config.MY_KEY;
 	// Call function to send request
-	weather.innerHTML = mykey;
+	weather.innerHTML = s3.accessKeyId;
 	// Call function to translate request
 }
