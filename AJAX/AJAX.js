@@ -15,7 +15,10 @@ function getWeather(){
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 		  info = JSON.parse(this.responseText);
-		  document.getElementById("weather").innerHTML = info.main.temp;
+		  document.getElementById("temp").innerHTML    = info.main.temp;
+		  document.getElementById("high").innerHTML    = info.main.temp_max;
+		  document.getElementById("low").innerHTML     = info.main.temp_min;
+		  document.getElementById("weather").innerHTML = info.weather[0].main;
 		}
 	};
 	xhttp.open("GET", api, true);

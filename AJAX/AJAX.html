@@ -12,10 +12,16 @@
 		<h2 style="text-align:center;">Example of an AJAX request</h2>
 		<hr><br>
 		<br>
-		The current temperature in your area is: <div id="weather"></div><br>
 		Lat: <input id="lat" type="text"></input><br><br>
 		Lon: <input id="lon" type="text"></input><br><br>
 		<button onclick="getWeather()">Get Weather</button><br><br>
+		<b>The current temperature in your area is:</b><br><br>
+		<div id="results">
+			Temperature: <span id="temp"></span> C<br><br>
+			High: <span id="high"></span> C<br><br>
+			Low: <span id="low"></span> C<br><br>
+			Weather: <span id="weather"></span><br><br>
+		</div>
 	</div></div>
 	<br><br>
 </body>
