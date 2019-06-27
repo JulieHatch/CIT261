@@ -8,6 +8,6 @@ function getWeather(){
 	var weather = document.getElementById("weather");
 	
 	// Call function to send request
-	weather.innerHTML = config.MY_KEY;
+	weather.innerHTML = 3;
 	// Call function to translate request
 }
