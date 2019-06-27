@@ -7,7 +7,8 @@ function getWeather(){
 	var zip		= document.getElementById("zipCode").value;
 	var weather = document.getElementById("weather");
 	
+	var mykey = config.MY_KEY;
 	// Call function to send request
-	weather.innerHTML = 35;
+	weather.innerHTML = mykey;
 	// Call function to translate request
 }
