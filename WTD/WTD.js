@@ -47,3 +47,5 @@ function getActivities(temp, weather){
 		document.getElementById("actResults").innerHTML = "not between 20.5 and 29.4";
 	}
 }
+
+// MOVE FAVORITE FOR LOCAL STORAGE
