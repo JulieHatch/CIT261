@@ -1,0 +1,60 @@
+body {
+	padding: 0px;
+	margin:0px;
+	background-color: #333;
+	font-family:verdana;
+	color:white;
+	text-align:center;
+}
+.box {
+	background-color: #f1f1f1;
+	margin: 10px;
+	max-width:1200px;
+	padding:10px;
+	text-align:left;
+	border-radius: 25px;
+}
+.boxBig {
+	background-color: black;
+	margin: 10px;
+	max-width:750px;
+	padding: 10px;
+	color:black;
+	border-radius: 35px;
+}
+header{
+	 font-size:150%;
+}
+
+/*An animation*/
+/*An animation where color change occurs*/
+@keyframes animation {
+	0%		{background: #3c576d;}
+	50%		{background: #ef8a1f;}
+	100%	{background: #3c576d;}
+}
+/*A shape that will be animated to change color*/
+#animation {
+	width: 100px;
+	height: 100px;
+	background: #3c576d;
+	border-radius: 50px;
+	animation: animation 3s infinite;
+}
+/*Makes it possible for the user to pause the animation by hovering over it.*/
+#animation:hover{
+	animation-play-state: paused;
+}
+
+/*An transition*/
+/*Shows a shape changing color*/
+#transition{
+	width: 100px;
+	height: 100px;
+	background: #3c576d;
+	border-radius: 50px;
+	transition: background 1.5s;
+}
+#transition:hover{
+	background: #ef8a1f;
+}

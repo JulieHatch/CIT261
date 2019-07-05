@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WTD</title>
+	<script src="WTD.js"></script>
+	<link rel="stylesheet" type="text/css" href="WTD.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="load()">
+	<h1 style="text-align:center">What to do</h1>
+	<div class="boxBig"style="margin:auto; text-align:auto;"><div class="box">
+		<h2 style="text-align:center;">Please Enter Information Here</h2>
+		<hr><br>
+		<br>
+		Lat: <input id="lat" type="text" value="43.8231"></input><br><br>
+		Lon: <input id="lon" type="text" value="111.7924"></input><br><br>
+		Type of Activity: 
+		<select id="activity">
+			<option value="active">active</option>
+			<option value="creative">creative</option>
+			<option value="learning">learning</option>
+			<option value="relaxing">relaxing</option>
+		</select>
+		<br><br>
+		
+		<button onclick="getWeather()">WTD</button><br><br>
+		<b>The current temperature in your area is:</b><br><br>
+		<div id="results">
+			Temperature: <span id="temp"></span> C<br><br>
+			High: <span id="high"></span> C<br><br>
+			Low: <span id="low"></span> C<br><br>
+			Weather: <span id="weather"></span><br><br>
+		</div>
+	</div></div>
+	<br><br>
+	<div class="boxBig"style="margin:auto; text-align:auto;"><div class="box">
+		<h2 style="text-align:center;">Here are some things that you may be interested in</h2>
+		<hr><br>
+		<div id="actResults"></div><br>
+		
+	</div></div>
+	<br><br>
+</body>
+</html>
