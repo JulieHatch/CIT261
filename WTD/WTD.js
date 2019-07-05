@@ -28,18 +28,18 @@ function getWeather(){
 			// grab values to be used for activities
 			temp 	= info.main.temp;
 			weather = info.weather[0].main;
+			// call get activies using the information gathered
 			getActivities(temp, weather);
 		}
 	};
 	xhttp.open("GET", api, true);
 	xhttp.send();
-	
-	
 }
 /**********************************************************
  * Determine best activities for the user.
 **********************************************************/
 function getActivities(temp, weather){
+	// If the temperature is ideal
 	if(temp > 20.5 && temp < 29.4){
 		document.getElementById("actResults").innerHTML = "between 20.5 and 29.4";
 	}
