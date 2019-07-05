@@ -39,7 +39,7 @@ function getWeather(){
  * Determine best activities for the user.
 **********************************************************/
 function getActivities(temp, weather){
-	if(temp > 20.5 && temp < 29.4){
+	if(temp > "20.5" && temp < "29.4"){
 		document.getElementById("actResults").innerHTML = "between 20.5 and 29.4";
 	}
 	else{
