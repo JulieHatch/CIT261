@@ -35,7 +35,7 @@ input[type=text], select {
 }
 
 
-button[type=submit] {
+button {
   width: 90%;
   background-color: blue;
   color: white;
