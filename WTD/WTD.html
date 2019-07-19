@@ -12,18 +12,22 @@
 		<h2 style="text-align:center;">Please Enter Information Here</h2>
 		<hr><br>
 		<br>
-		Lat: <input id="lat" type="text" value="43.8231"></input><br><br>
-		Lon: <input id="lon" type="text" value="-111.7924"></input><br><br>
-		Type of Activity: 
+		Lat: <input class="place" id="lat" type="text" value="43.8231"><br>
+		Lon: <input class="place" id="lon" type="text" value="-111.7924">
+		<br>Type of Activity: 
 		<select id="activity">
-			<option value="active">active</option>
-			<option value="creative">creative</option>
-			<option value="learning">learning</option>
-			<option value="relaxing">relaxing</option>
-		</select>
+			<option value="active">Active</option>
+			<option value="creative">Creative</option>
+			<option value="learning">Learning</option>
+			<option value="relaxing">Relaxing</option>
+		</select><br>
 		<br><br>
 		
-		<button onclick="getWeather()">WTD</button><br><br>
+		<button onclick="getWeather()"><font size="3">
+			Find an activity
+		</font></button>
+		
+		<br><br>
 		<b>The current temperature in your area is:</b><br><br>
 		<div id="results">
 			Temperature: <span id="temp"></span> C<br><br>
