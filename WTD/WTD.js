@@ -35,6 +35,7 @@ function getWeather(){
 	xhttp.open("GET", api, true);
 	xhttp.send();
 }
+
 /**********************************************************
  * Determine best activities for the user.
 **********************************************************/
