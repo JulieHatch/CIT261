@@ -72,7 +72,7 @@ function getActivities(temp, weather){
 			document.getElementById("activities").innerHTML = "Find shapes in clouds!";
 		}
 	}
-	if (weather == "snow")
+	document.getElementById("actResults").innerHTML = "Draw a picture";
 	
 }
 
