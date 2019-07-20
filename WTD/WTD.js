@@ -12,6 +12,7 @@ function getWeather(){
 	var xhttp 	= new XMLHttpRequest();
 	var info	= "";
 	var weather = "";
+	var wind;
 	var temp;
 	
 	// request and process the data
@@ -24,10 +25,12 @@ function getWeather(){
 			document.getElementById("high").innerHTML    = info.main.temp_max;
 			document.getElementById("low").innerHTML     = info.main.temp_min;
 			document.getElementById("weather").innerHTML = info.weather[0].main;
+			document.getElementById("wind").innerHTML    = info.wind.speed;
 			
 			// grab values to be used for activities
 			temp 	= info.main.temp;
 			weather = info.weather[0].main;
+			wind    = info.wind.speed;
 			// call get activies using the information gathered
 			getActivities(temp, weather);
 		}
@@ -41,12 +44,36 @@ function getWeather(){
 **********************************************************/
 function getActivities(temp, weather){
 	// If the temperature is ideal
-	if(temp > 20.5 && temp < 29.4){
-		document.getElementById("actResults").innerHTML = "between 20.5 and 29.4";
+	//use ID for determining weather instead of description
+	// Outdoors/active
+	if (weather == "Clear")
+	{
+		if (wind > 4 && wind < 10){
+			document.getElementById("activities").innerHTML = "Fly a kite!";
+		}
+		else {
+			document.getElementById("activities").innerHTML = "Go for a swim!";
+		}
 	}
-	else{
-		document.getElementById("actResults").innerHTML = "not between 20.5 and 29.4";
+	if (weather == "Clouds"){
+		if (wind > 4 && wind < 10){
+			document.getElementById("activities").innerHTML = "Fly a kite!";
+		}
+		else {
+			document.getElementById("activities").innerHTML = "Find shapes in clouds!";
+		}
 	}
+	if (weather == "Snow"){
+		// Nothing too cold to be out in
+		if (description == "light snow" || description == "Snow" || description == "Heavy snow" ){
+			document.getElementById("activities").innerHTML = "Build a snowman";
+		}
+		else {
+			document.getElementById("activities").innerHTML = "Find shapes in clouds!";
+		}
+	}
+	if (weather == "snow")
+	
 }
 
 // MOVE FAVORITE FOR LOCAL STORAGE
