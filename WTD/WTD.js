@@ -15,8 +15,8 @@ function storedInfo(){
 	//Check if the position is empty
 	if(lon != "" || lat != ""){
 		// if not change position in the input boxes
-		document.getElementById("testLon").innerHTML = lon;
-		document.getElementById("testLat").innerHTML = lat;
+		document.getElementById("lon").value = lon;
+		document.getElementById("lat").value = lat;
 	} 
 	else {
 		// if it is empty set the position to the default
