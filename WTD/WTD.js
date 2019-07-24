@@ -4,18 +4,18 @@
 **********************************************************/
 function storedInfo(){
 	// set variables to stored variables
-	var lon = JSON.parse(sessionStorage.getItem('lon'));
-	var lat = JSON.parse(sessionStorage.getItem('lat'));
+	var lon = JSON.parse(localStorage.getItem('lon'));
+	var lat = JSON.parse(localStorage.getItem('lat'));
 	//Check if the position is different
-	if(lon != "" || lat != ""){
-		// if so change position in the input boxes
-		document.getElementById("lon").value = lon;
-		document.getElementById("lat").value = lat;
-	} 
-	else {
-		document.getElementById("lon").value = "43.8231";
-		document.getElementById("lat").value = "-111.7924";
-	}
+	//if(lon != "undefined" || lat != "undefined"){
+	//	// if so change position in the input boxes
+		document.getElementById("testLon").innerHTML = lon;
+		document.getElementById("testLat").innerHTML = lat;
+	//} 
+	//else {
+	//	document.getElementById("lon").value = "43.8231";
+	//	document.getElementById("lat").value = "-111.7924";
+	//}
 }
 /**********************************************************
  * Gets the current weather of a specific zip code 
@@ -27,8 +27,8 @@ function getWeather(){
 	var lon		= document.getElementById("lon").value;
 	
 	// store in session storage
-	sessionStorage.setItem('lon', JSON.stringify(lon));
-	sessionStorage.setItem('lat', JSON.stringify(lat));
+	localStorage.setItem('lon', JSON.stringify(lon));
+	localStorage.setItem('lat', JSON.stringify(lat));
 	
 	// set the url based on what the user input
 	var api     = "https://fcc-weather-api.glitch.me/api/current?lat="
