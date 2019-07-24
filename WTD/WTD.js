@@ -63,6 +63,11 @@ function getActivities(temp, weather){
 			document.getElementById("activities").innerHTML = "Find shapes in clouds!";
 		}
 	}
+	if (weather == "Thunderstorm"){
+		//if (type == "Relaxed"){
+			document.getElementById("activities").innerHTML = "Play a board game";
+		//}
+	}
 	if (weather == "Snow"){
 		// Nothing too cold to be out in
 		if (description == "light snow" || description == "Snow" || description == "Heavy snow" ){
@@ -72,7 +77,24 @@ function getActivities(temp, weather){
 			document.getElementById("activities").innerHTML = "Find shapes in clouds!";
 		}
 	}
-	document.getElementById("actResults").innerHTML = "Draw a picture";
+	if (weather == "Drizzle"){
+		// Nothing too cold to be out in
+		//if (type=="active"){
+			document.getElementById("activities").innerHTML = "Splash in a puddle while looking for rainbows.";
+		/*}
+		else {
+			document.getElementById("activities").innerHTML = "Play a board game";
+		*/}
+	}
+	if (weather == "Rain"){
+		// Nothing too cold to be out in
+		//if (type=="active"){
+			document.getElementById("activities").innerHTML = "Splash in a puddle while looking for rainbows.";
+		//}
+		//else {
+		//	document.getElementById("activities").innerHTML = "Play a board game";
+		//}
+	}
 	
 }
 
