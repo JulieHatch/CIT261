@@ -84,7 +84,7 @@ function getActivities(temp, weather){
 		/*}
 		else {
 			document.getElementById("activities").innerHTML = "Play a board game";
-		*/}
+		}*/
 	}
 	if (weather == "Rain"){
 		// Nothing too cold to be out in
