@@ -6,6 +6,10 @@ function getWeather(){
 	// Declare and set variables to be used in this function.
 	var lat		= document.getElementById("lat").value;
 	var lon		= document.getElementById("lon").value;
+	
+	// TODO: PLACE LON AND LAT IN LOCAL STORAGE
+	
+	
 	// set the url based on what the user input
 	var api     = "https://fcc-weather-api.glitch.me/api/current?lat="
 				+ lat + "&lon=" + lon;
@@ -43,59 +47,98 @@ function getWeather(){
  * Determine best activities for the user.
 **********************************************************/
 function getActivities(temp, weather){
-	// If the temperature is ideal
-	//use ID for determining weather instead of description
-	// Outdoors/active
+	// Grab the type of activity the user requested
+	var type = document.getElementById("activityType").value;
+	// Determine if it is healthy for humans to have activities outside
+	if (temp < -0.555556 || temp > 32.7778){
+		// because the temperatures are at a health risk people should stay inside.
+		weather = "indoors";
+	}
+	// Use weather to determine if activity is appropriate
 	if (weather == "Clear")
 	{
-		if (wind > 4 && wind < 10){
-			document.getElementById("activities").innerHTML = "Fly a kite!";
+		if (type == "active") {
+			if (wind > 4 && wind < 10){
+				document.getElementById("activities").innerHTML = "Fly a kite!";
+			}
+			else {
+				document.getElementById("activities").innerHTML = "Go for a swim!";
+			}
 		}
-		else {
-			document.getElementById("activities").innerHTML = "Go for a swim!";
+		if (type == "creative") {
+			document.getElementById("activities").innerHTML = "Draw on the side walk with chalk";
+		}
+		if (type == "relaxing") {
+			document.getElementById("activities").innerHTML = "Read outside under a tree or in a hammock";
+		}
+		if (type == "learning") {
+			document.getElementById("activities").innerHTML = "Go to a national park and take a tour";
 		}
 	}
 	if (weather == "Clouds"){
-		if (wind > 4 && wind < 10){
-			document.getElementById("activities").innerHTML = "Fly a kite!";
+		if (type == "active") {
+			document.getElementById("activities").innerHTML = "Go for a jog";
 		}
-		else {
-			document.getElementById("activities").innerHTML = "Find shapes in clouds!";
+		if (type == "creative") {
+			document.getElementById("activities").innerHTML = "Look for shapes in the clouds and try drawing what you see";
+		}
+		if (type == "relaxing") {
+			document.getElementById("activities").innerHTML = "Get a massage";
+		}
+		if (type == "learning") {
+			document.getElementById("activities").innerHTML = "Go to your local library";
 		}
 	}
 	if (weather == "Thunderstorm"){
-		//if (type == "Relaxed"){
-			document.getElementById("activities").innerHTML = "Play a board game";
-		//}
+		if (type == "active") {
+			document.getElementById("activities").innerHTML = "Go to your local gym and take a class";
+		}
+		if (type == "creative") {
+			document.getElementById("activities").innerHTML = "Try learning a new instrument";
+		}
+		if (type == "relaxing") {
+			document.getElementById("activities").innerHTML = "Try out yoga";
+		}
+		if (type == "learning") {
+			document.getElementById("activities").innerHTML = "Go to a museum";
+		}
 	}
 	if (weather == "Snow"){
 		// Nothing too cold to be out in
 		if (description == "light snow" || description == "Snow" || description == "Heavy snow" ){
-			document.getElementById("activities").innerHTML = "Build a snowman";
+			if (type == "active") {
+				document.getElementById("activities").innerHTML = "Build a snowman";
+			}
+			if (type == "creative") {
+				document.getElementById("activities").innerHTML = "Try sculpting with snow";
+			}
+			if (type == "relaxing") {
+				document.getElementById("activities").innerHTML = "Drink hot chocolate and watch the snow fall";
+			}
+			if (type == "learning") {
+				document.getElementById("activities").innerHTML = "Learn how snow is formed";
+			}
 		}
 		else {
-			document.getElementById("activities").innerHTML = "Find shapes in clouds!";
+			weather == "indoor";
 		}
 	}
-	if (weather == "Drizzle"){
-		// Nothing too cold to be out in
-		//if (type=="active"){
-			document.getElementById("activities").innerHTML = "Splash in a puddle while looking for rainbows.";
-		/*}
-		else {
-			document.getElementById("activities").innerHTML = "Play a board game";
-		}*/
+	if (weather != "Snow" && weather != "Clear" && weather != "Thunderstorm" && weather != "Clouds"){
+		weather == "indoor";
 	}
-	if (weather == "Rain"){
-		// Nothing too cold to be out in
-		//if (type=="active"){
-			document.getElementById("activities").innerHTML = "Splash in a puddle while looking for rainbows.";
-		//}
-		//else {
-		//	document.getElementById("activities").innerHTML = "Play a board game";
-		//}
+	if (weather == "indoor"){
+		if (type=="active"){
+			document.getElementById("activities").innerHTML = "Try a new at home workout video.";
+		}
+		if (type == "creative") {
+			document.getElementById("activities").innerHTML = "Try a crafting tutorial";
+		}
+		if (type == "relaxing") {
+			document.getElementById("activities").innerHTML = "Take a nap";
+		}
+		if (type == "learning") {
+			document.getElementById("activities").innerHTML = "Watch a documentary";
+		}
 	}
 	
 }
-
-// MOVE FAVORITE FOR LOCAL STORAGE
