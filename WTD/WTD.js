@@ -1,4 +1,19 @@
 /**********************************************************
+ * Checks if the user has used a different position and
+ * if so changes variables to previously stored position.
+**********************************************************/
+function storedInfo(){
+	// set variables to stored variables
+	var lon = JSON.parse(sessionStorage.getItem('lon'));
+	var lat = JSON.parse(sessionStorage.getItem('lat'));
+	//Check if the position is different
+	if(lon != "43.8231" || lat != "-111.7924"){
+		// if so change position in the input boxes
+		document.getElementById("lon").value = lon;
+		document.getElementById("lat").value = lat;
+	}
+}
+/**********************************************************
  * Gets the current weather of a specific zip code 
  * specified by the user.
 **********************************************************/
@@ -7,8 +22,9 @@ function getWeather(){
 	var lat		= document.getElementById("lat").value;
 	var lon		= document.getElementById("lon").value;
 	
-	// TODO: PLACE LON AND LAT IN LOCAL STORAGE
-	
+	// store in session storage
+	sessionStorage.setItem('lon', JSON.stringify(lon));
+	sessionStorage.setItem('lat', JSON.stringify(lat));
 	
 	// set the url based on what the user input
 	var api     = "https://fcc-weather-api.glitch.me/api/current?lat="
