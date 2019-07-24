@@ -9,8 +9,8 @@ function storedInfo(){
 	
 	//TODO DELETE THIS TESTING TEXT
 	//Possibly add a check box to use default location
-	document.getElementById("testLon").innerHTML = lon;
-	document.getElementById("testLat").innerHTML = lat;
+	//document.getElementById("testLon").innerHTML = lon;
+	//document.getElementById("testLat").innerHTML = lat;
 	
 	//Check if the position is empty
 	if(lon != "" || lat != ""){
