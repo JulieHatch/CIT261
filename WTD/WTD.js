@@ -7,7 +7,7 @@ function storedInfo(){
 	var lon = JSON.parse(sessionStorage.getItem('lon'));
 	var lat = JSON.parse(sessionStorage.getItem('lat'));
 	//Check if the position is different
-	if(lon != "43.8231" || lat != "-111.7924"){
+	if(lon != "" || lat != ""){
 		// if so change position in the input boxes
 		document.getElementById("lon").value = lon;
 		document.getElementById("lat").value = lat;
