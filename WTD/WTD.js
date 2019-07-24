@@ -6,16 +6,23 @@ function storedInfo(){
 	// set variables to stored variables
 	var lon = JSON.parse(localStorage.getItem('lon'));
 	var lat = JSON.parse(localStorage.getItem('lat'));
-	//Check if the position is different
-	//if(lon != "undefined" || lat != "undefined"){
-	//	// if so change position in the input boxes
+	
+	//TODO DELETE THIS TESTING TEXT
+	//Possibly add a check box to use default location
+	document.getElementById("testLon").innerHTML = lon;
+	document.getElementById("testLat").innerHTML = lat;
+	
+	//Check if the position is empty
+	if(lon != "" || lat != ""){
+		// if not change position in the input boxes
 		document.getElementById("testLon").innerHTML = lon;
 		document.getElementById("testLat").innerHTML = lat;
-	//} 
-	//else {
-	//	document.getElementById("lon").value = "43.8231";
-	//	document.getElementById("lat").value = "-111.7924";
-	//}
+	} 
+	else {
+		// if it is empty set the position to the default
+		document.getElementById("lon").value = "43.8231";
+		document.getElementById("lat").value = "-111.7924";
+	}
 }
 /**********************************************************
  * Gets the current weather of a specific zip code 
