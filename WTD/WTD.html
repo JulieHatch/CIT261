@@ -11,21 +11,25 @@
 	<div class="boxBig"style="margin:auto; text-align:auto;"><div class="box">
 		<h2 style="text-align:center;">Please Enter Information Here</h2>
 		<hr><br>
-		<br>
 		Lat: <input class="place" id="lat" type="text" value="43.8231"><br>
-		Lon: <input class="place" id="lon" type="text" value="-111.7924">
-		<br>Type of Activity: 
+		Lon: <input class="place" id="lon" type="text" value="-111.7924"><br>
+		
+		Type of Activity: 
 		<select id="activityType">
 			<option value="active">Active</option>
 			<option value="creative">Creative</option>
 			<option value="learning">Learning</option>
 			<option value="relaxing">Relaxing</option>
-		</select><br>
-		<br><br>
+		</select><br><br>
 		
 		<button onclick="getWeather()"><font size="3">
 			Find an activity
 		</font></button>
+		
+		<!-- LAST TODO LIST
+		TODO 1. CHECKBOX SET DEFAULT LOCATION
+		     2. FLEXBOX FOR LON LAT/TYPE OF ACTIVITY
+		Set Default Location<checkbox></checkbox> -->
 		
 	</div></div>
 	<br><br>
@@ -38,6 +42,15 @@
 			Low: <span id="low"></span> C<br><br>
 			Weather: <span id="weather"></span><br><br>
 			Wind: <span id="wind"></span>MPH<br><br>
+			Icon: <span id="icon"></span><br><br>
+			<!-- FIRST TO DO LIST
+			TODO 1. PLACE ICON IN BOX
+				 2. FLEXBOX TO DISPLAY INFORMATION AND PICTURE
+				 DO TWO OF THE FOLLOWING HERE:
+				 3. ADD TRANSFORM
+				 4. ADD TRANSITION
+				 5. ADD ANIMATION
+			-->
 		</div>
 	</div></div>
 	<br><br>
@@ -45,7 +58,14 @@
 		<h2 style="text-align:center;">Here is something that you may be interested in</h2>
 		<hr><br>
 		<div id="activities"></div><br>
-		
+		<!-- SECOND TO DO LIST
+		TODO 1. REDO HEADER NAME
+			 2. MAKE ACTIVITY TEXT MORE EXCITING TO LOOK AT
+			 DO ONE OF THE FOLLOWING HERE (THAT WAS NOT DONE ABOVE):
+			 3. ADD TRANSFORM
+			 4. ADD TRANSITION
+			 5. ADD ANIMATION
+		-->
 	</div></div>
 	<br><br>
 </body>

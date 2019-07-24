@@ -7,8 +7,7 @@ function storedInfo(){
 	var lon = JSON.parse(localStorage.getItem('lon'));
 	var lat = JSON.parse(localStorage.getItem('lat'));
 	
-	//TODO DELETE THIS TESTING TEXT
-	//Possibly add a check box to use default location
+	// TODO: Possibly add a check box to use default location
 	//document.getElementById("testLon").innerHTML = lon;
 	//document.getElementById("testLat").innerHTML = lat;
 	
@@ -43,6 +42,7 @@ function getWeather(){
 	var xhttp 	= new XMLHttpRequest();
 	var info	= "";
 	var weather = "";
+	var icon 	= "";
 	var wind;
 	var temp;
 	
@@ -57,6 +57,7 @@ function getWeather(){
 			document.getElementById("low").innerHTML     = info.main.temp_min;
 			document.getElementById("weather").innerHTML = info.weather[0].main;
 			document.getElementById("wind").innerHTML    = info.wind.speed;
+			document.getElementById("icon").innerHTML    = info.weather[0].icon;
 			
 			// grab values to be used for activities
 			temp 	= info.main.temp;
