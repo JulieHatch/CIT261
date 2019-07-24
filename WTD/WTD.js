@@ -11,6 +11,10 @@ function storedInfo(){
 		// if so change position in the input boxes
 		document.getElementById("lon").value = lon;
 		document.getElementById("lat").value = lat;
+	} 
+	else {
+		document.getElementById("lon").value = "43.8231";
+		document.getElementById("lat").value = "-111.7924";
 	}
 }
 /**********************************************************
