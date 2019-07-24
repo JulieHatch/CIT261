@@ -57,7 +57,9 @@ function getWeather(){
 			document.getElementById("low").innerHTML     = info.main.temp_min;
 			document.getElementById("weather").innerHTML = info.weather[0].main;
 			document.getElementById("wind").innerHTML    = info.wind.speed;
-			document.getElementById("icon").src		     = info.weather[0].icon;
+			
+			
+			document.getElementById("test-icon").innerHTML = info.weather[0].icon;
 			
 			// grab values to be used for activities
 			temp 	= info.main.temp;
