@@ -45,17 +45,17 @@ header{
 	 font-size:150%;
 }
 
-input[type=text], select {
+input[type=text]{
   width:30%;
   padding: 10px 8px;
-  margin: 5px 0px;
+  margin: 5px 1px;
   border: 1px solid #ccc;
   border-radius: 9px;
 }
 select {
   width:90%;
   padding: 10px 8px;
-  margin: 5px 0px;
+  margin: 5px 1px;
   border: 1px solid #ccc;
   border-radius: 9px;
 }
