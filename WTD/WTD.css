@@ -75,13 +75,15 @@ button {
 button[type=submit]:hover {
   background-color: darkblue;
 }
-
-/*A simple animation transform combo to give an icon movement*/
-.weather-icon {
+.weather-icon-shape {
   background-color: black;
   height: 50px;
   width: 50px;
   border-radius: 25px;
+}
+
+/*A simple animation transform combo to give an icon movement*/
+.weather-icon {
   animation: trans-icon 1s infinite;
   transform: translate(20px);
   animation-direction: alternate;
