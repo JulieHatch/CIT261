@@ -23,6 +23,7 @@ function storedInfo(){
 		document.getElementById("lat").value = "-111.7924";
 	}
 }
+
 /**********************************************************
  * Gets the current weather of a specific zip code 
  * specified by the user.
@@ -42,7 +43,7 @@ function getWeather(){
 	var xhttp 	= new XMLHttpRequest();
 	var info	= "";
 	var weather = "";
-	var icon 	= "";
+	var icon;
 	var wind;
 	var temp;
 	var id;
@@ -65,11 +66,10 @@ function getWeather(){
 			temp 	= info.main.temp;
 			weather = info.weather[0].main;
 			wind    = info.wind.speed;
+			icon 	= document.getElementById("icon");
 			var testI = document.getElementById("test-icon");
-			var icon = document.getElementById("icon");
 			
-			// TODO: find icon to use and set icon for user to see
-			//Switchcase here
+			// Determine which icon to use
 			switch (weather) {
 				case "Rain":
 					icon.src = "http://openweathermap.org/img/wn/10d@2x.png";
