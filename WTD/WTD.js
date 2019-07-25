@@ -66,29 +66,37 @@ function getWeather(){
 			weather = info.weather[0].main;
 			wind    = info.wind.speed;
 			var testI = document.getElementById("test-icon");
+			var icon = document.getElementById("icon");
 			
 			// TODO: find icon to use and set icon for user to see
 			//Switchcase here
 			switch (weather) {
 				case "Rain":
+					icon.href = "http://openweathermap.org/img/wn/10d@2x.png";
 					testI.innerHTML = "Rain";
 					break;
 				case "Thunderstorm":
+					icon.href = "http://openweathermap.org/img/wn/11d@2x.png";
 					testI.innerHTML = "Thunderstorm";
 					break;
 				case "Snow":
+					icon.href = "http://openweathermap.org/img/wn/13d@2x.png";
 					testI.innerHTML = "Snow";
 					break;
 				case "Drizzle":
+					icon.href = "http://openweathermap.org/img/wn/09d@2x.png";
 					testI.innerHTML = "Drizzle";
 					break;
 				case "Clear":
+					icon.href = "http://openweathermap.org/img/wn/01d@2x.png";
 					testI.innerHTML = "Clear";
 					break;
 				case "Clouds":
+					icon.href = "http://openweathermap.org/img/wn/03d@2x.png";
 					testI.innerHTML = "Clouds";
 					break;
 				default:
+					icon.href = "http://openweathermap.org/img/wn/50d@2x.png";
 					testI.innerHTML = "Other";
 			}
 			// call get activies using the information gathered
