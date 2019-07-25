@@ -72,32 +72,25 @@ function getWeather(){
 			// Determine which icon to use
 			switch (weather) {
 				case "Rain":
-					icon.src = "http://openweathermap.org/img/wn/10d@2x.png";
-					testI.innerHTML = "Rain";
+					icon.src = "http://openweathermap.org/img/wn/10d.png";
 					break;
 				case "Thunderstorm":
-					icon.src = "http://openweathermap.org/img/wn/11d@2x.png";
-					testI.innerHTML = "Thunderstorm";
+					icon.src = "http://openweathermap.org/img/wn/11d.png";
 					break;
 				case "Snow":
-					icon.src = "http://openweathermap.org/img/wn/13d@2x.png";
-					testI.innerHTML = "Snow";
+					icon.src = "http://openweathermap.org/img/wn/13d.png";
 					break;
 				case "Drizzle":
-					icon.src = "http://openweathermap.org/img/wn/09d@2x.png";
-					testI.innerHTML = "Drizzle";
+					icon.src = "http://openweathermap.org/img/wn/09d.png";
 					break;
 				case "Clear":
-					icon.src = "http://openweathermap.org/img/wn/01d@2x.png";
-					testI.innerHTML = "Clear";
+					icon.src = "http://openweathermap.org/img/wn/01d.png";
 					break;
 				case "Clouds":
-					icon.src = "http://openweathermap.org/img/wn/03d@2x.png";
-					testI.innerHTML = "Clouds";
+					icon.src = "http://openweathermap.org/img/wn/03d.png";
 					break;
 				default:
-					icon.src = "http://openweathermap.org/img/wn/50d@2x.png";
-					testI.innerHTML = "Other";
+					icon.src = "http://openweathermap.org/img/wn/50d.png";
 			}
 			// call get activies using the information gathered
 			getActivities(temp, weather);
