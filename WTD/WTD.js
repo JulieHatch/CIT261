@@ -45,12 +45,14 @@ function getWeather(){
 	var icon 	= "";
 	var wind;
 	var temp;
+	var id;
 	
 	// request and process the data
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			// parse the information received
 			info = JSON.parse(this.responseText);
+			
 			// place these elements on the page
 			document.getElementById("temp").innerHTML    = info.main.temp;
 			document.getElementById("high").innerHTML    = info.main.temp_max;
@@ -58,13 +60,37 @@ function getWeather(){
 			document.getElementById("weather").innerHTML = info.weather[0].main;
 			document.getElementById("wind").innerHTML    = info.wind.speed;
 			
-			
-			document.getElementById("test-icon").innerHTML = info.weather[0].icon;
-			
 			// grab values to be used for activities
+			id 		= info.weather[0].id;
 			temp 	= info.main.temp;
 			weather = info.weather[0].main;
 			wind    = info.wind.speed;
+			var testI = document.getElementById("test-icon");
+			
+			// TODO: find icon to use and set icon for user to see
+			//Switchcase here
+			switch (weather) {
+				case "Rain":
+					testI.innerHTML = "Rain";
+					break;
+				case "Thunderstorm":
+					testI.innerHTML = "Thunderstorm";
+					break;
+				case "Snow":
+					testI.innerHTML = "Snow";
+					break;
+				case "Drizzle":
+					testI.innerHTML = "Drizzle";
+					break;
+				case "Clear":
+					testI.innerHTML = "Clear";
+					break;
+				case "Clouds":
+					testI.innerHTML = "Clouds";
+					break;
+				default:
+					testI.innerHTML = "Other";
+			}
 			// call get activies using the information gathered
 			getActivities(temp, weather);
 		}
