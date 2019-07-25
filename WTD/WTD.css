@@ -22,6 +22,25 @@ body {
 	color:black;
 	border-radius: 35px;
 }
+
+.container {
+  padding: 9px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.half {
+  padding: 0;
+  min-width: 140px;
+  width: 340px;
+  height: 150px;
+  margin-top: 5px;
+  color: black;
+  font-weight: bold;
+}
+
 header{
 	 font-size:150%;
 }

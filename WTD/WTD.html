@@ -36,22 +36,28 @@
 	<div class="boxBig"style="margin:auto; text-align:auto;"><div class="box">
 		<br><br>
 		<b>The current temperature in your area is:</b><br><br>
-		<div id="results">
-			Temperature: <span id="temp"></span> C<br><br>
-			High: <span id="high"></span> C<br><br>
-			Low: <span id="low"></span> C<br><br>
-			Weather: <span id="weather"></span><br><br>
-			Wind: <span id="wind"></span>MPH<br><br>
-			Icon: <span id="test-icon"></span>
-			<img id="icon" src="" alt="weather icon" /><br><br>
-			<!-- FIRST TO DO LIST
-			TODO 1. PLACE ICON IN BOX
-				 2. FLEXBOX TO DISPLAY INFORMATION AND PICTURE
-				 DO TWO OF THE FOLLOWING HERE:
-				 3. ADD TRANSFORM
-				 4. ADD TRANSITION
-				 5. ADD ANIMATION
-			-->
+		<div class="container">
+			<div class="half">
+				Temperature: <span id="temp"></span> C<br><br>
+				High: <span id="high"></span> C<br><br>
+				Low: <span id="low"></span> C<br><br>
+				Weather: <span id="weather"></span><br><br>
+				Wind: <span id="wind"></span>MPH<br><br>
+			</div>
+			<div class="half">
+				Icon: <span id="test-icon"></span>
+				<div class="weather-icon"><img id="icon" src="" alt="weather icon" /></div>
+				<br><br>
+				<!-- FIRST TO DO LIST
+				TODO 1. PLACE ICON IN BOX
+					 2. FLEXBOX TO DISPLAY INFORMATION AND PICTURE
+					 3. MAKE HIDDEN UNTIL CLICKING OF BUTTON OCCURS
+					 DO TWO OF THE FOLLOWING HERE:
+					 4. ADD TRANSFORM
+					 5. ADD TRANSITION
+					 6. ADD ANIMATION
+				-->
+			</div>
 		</div>
 	</div></div>
 	<br><br>
