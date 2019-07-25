@@ -60,19 +60,18 @@ select {
   border-radius: 9px;
 }
 
-
 button {
-  width: 80%;
+  width: 100%;
   background-color: blue;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
-  border-radius: 4px;
+  border-radius: 9px;
   cursor: pointer;
 }
 
-button[type=submit]:hover {
+button:hover {
   background-color: darkblue;
 }
 .weather-icon-shape {
@@ -84,7 +83,7 @@ button[type=submit]:hover {
 
 /*A simple animation transform combo to give an icon movement*/
 .weather-icon {
-  animation: trans-icon 1s infinite;
+  animation: trans-icon 1.5s infinite;
   transform: translate(35px);
   animation-direction: alternate;
   opacity: 1;
@@ -92,10 +91,10 @@ button[type=submit]:hover {
 
 @keyframes trans-icon {
   0% {
-    transform: translateX(50px);
+    transform: translateX(5px);
   }
   100% {
-    transform: translateX(20px);
+    transform: translateX(-5px);
   }
 }
 
