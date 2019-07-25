@@ -11,19 +11,20 @@
 	<div class="boxBig"style="margin:auto; text-align:auto;"><div class="box">
 		<h2 style="text-align:center;">Please Enter Information Here</h2>
 		<hr><br>
-		<div class="half">
-			Lat: <input class="place" id="lat" type="text" value="43.8231"><br>
-			Lon: <input class="place" id="lon" type="text" value="-111.7924"><br>
-			
-		</div>
-		<div class="half">
-			Type of Activity: <br>
-			<select id="activityType">
-				<option value="active">Active</option>
-				<option value="creative">Creative</option>
-				<option value="learning">Learning</option>
-				<option value="relaxing">Relaxing</option>
-			</select><br><br>
+		<div class="container">
+			<div class="half">
+				Lat: <input class="place" id="lat" type="text" value="43.8231"><br>
+				Lon: <input class="place" id="lon" type="text" value="-111.7924"><br>
+			</div>
+			<div class="half">
+				Type of Activity: <br>
+				<select id="activityType">
+					<option value="active">Active</option>
+					<option value="creative">Creative</option>
+					<option value="learning">Learning</option>
+					<option value="relaxing">Relaxing</option>
+				</select><br><br>
+			</div>
 		</div>
 			<button onclick="getWeather()"><font size="3">
 				Find an activity
@@ -33,12 +34,13 @@
 			TODO 1. CHECKBOX SET DEFAULT LOCATION
 				 2. FLEXBOX FOR LON LAT/TYPE OF ACTIVITY
 			Set Default Location<checkbox></checkbox> -->
+		
 	</div></div>
 	<br><br>
 	<div class="boxBig"style="margin:auto; text-align:auto;"><div class="box">
 		<br><br>
-		<div class="container">
 		<h3 style="text-align:center;">Weather</h3><hr><br>
+		<div class="container">
 			<div class="half">
 				Temperature: <span id="temp"></span> C<br><br>
 				High: <span id="high"></span> C<br><br>
