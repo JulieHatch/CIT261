@@ -85,17 +85,17 @@ button[type=submit]:hover {
 /*A simple animation transform combo to give an icon movement*/
 .weather-icon {
   animation: trans-icon 1s infinite;
-  transform: translate(20px);
+  transform: translate(35px);
   animation-direction: alternate;
   opacity: 1;
 }
 
 @keyframes trans-icon {
   0% {
-    transform: translateX(20px);
+    transform: translateX(50px);
   }
   100% {
-    transform: translateX(0px);
+    transform: translateX(20px);
   }
 }
 
