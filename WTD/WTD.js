@@ -72,25 +72,25 @@ function getWeather(){
 			// Determine which icon to use
 			switch (weather) {
 				case "Rain":
-					icon.src = "http://openweathermap.org/img/wn/10d.png";
+					icon.src = "http://openweathermap.org/img/wn/10d@2x.png";
 					break;
 				case "Thunderstorm":
-					icon.src = "http://openweathermap.org/img/wn/11d.png";
+					icon.src = "http://openweathermap.org/img/wn/11d@2x.png";
 					break;
 				case "Snow":
-					icon.src = "http://openweathermap.org/img/wn/13d.png";
+					icon.src = "http://openweathermap.org/img/wn/13d@2x.png";
 					break;
 				case "Drizzle":
-					icon.src = "http://openweathermap.org/img/wn/09d.png";
+					icon.src = "http://openweathermap.org/img/wn/09d@2x.png";
 					break;
 				case "Clear":
-					icon.src = "http://openweathermap.org/img/wn/01d.png";
+					icon.src = "http://openweathermap.org/img/wn/01d@2x.png";
 					break;
 				case "Clouds":
-					icon.src = "http://openweathermap.org/img/wn/03d.png";
+					icon.src = "http://openweathermap.org/img/wn/03d@2x.png";
 					break;
 				default:
-					icon.src = "http://openweathermap.org/img/wn/50d.png";
+					icon.src = "http://openweathermap.org/img/wn/50d@2x.png";
 			}
 			// call get activies using the information gathered
 			getActivities(temp, weather);
