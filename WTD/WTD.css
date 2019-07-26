@@ -22,112 +22,83 @@ body {
 	color:black;
 	border-radius: 35px;
 }
-
+/*Needed a container to half the boxes I am using for content*/
 .container {
-  padding: 9px;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
+	padding: 9px;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
 }
 
 .half {
-  padding: 0;
-  min-width: 140px;
-  width: 340px;
-  height: 150px;
-  margin-top: 5px;
-  color: black;
-  font-weight: bold;
+	padding: 0;
+	min-width: 140px;
+	width: 340px;
+	height: 150px;
+	margin-top: 5px;
+	color: black;
+	font-weight: bold;
 }
 
 header{
-	 font-size:150%;
+	font-size:150%;
 }
 
+/*Changing the way the inputs look*/
 input[type=text]{
-  width:30%;
-  padding: 10px 8px;
-  margin: 5px 1px;
-  border: 1px solid #ccc;
-  border-radius: 9px;
+	width:30%;
+	padding: 10px 8px;
+	margin: 5px 1px;
+	border: 1px solid #ccc;
+	border-radius: 9px;
 }
+
 select {
-  width:80%;
-  padding: 10px 8px;
-  margin: 5px 1px;
-  border: 1px solid #ccc;
-  border-radius: 9px;
+	width:80%;
+	padding: 10px 8px;
+	margin: 5px 1px;
+	border: 1px solid #ccc;
+	border-radius: 9px;
 }
 
+/*Simple Transition for when a user hovers/clicks the button*/
 button {
-  width: 100%;
-  background-color: blue;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 9px;
-  cursor: pointer;
-  transition: background-color 1s;
+	width: 100%;
+	background-color: blue;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 9px;
+	cursor: pointer;
+	transition: background-color 1s;
 }
-
+/*Simple Transition turns background color from blue to dark blue*/
 button:hover {
-  background-color: darkblue;
+	background-color: darkblue;
 }
+/* Background for the weather icon*/
 .weather-icon-shape {
-  background-color: black;
-  height: 100px;
-  width: 100px;
-  border-radius: 25px;
+	background-color: black;
+	height: 100px;
+	width: 100px;
+	border-radius: 25px;
 }
 
 /*A simple animation transform combo to give an icon movement*/
 .weather-icon {
-  animation: trans-icon 1.5s infinite;
-  transform: translate(35px);
-  animation-direction: alternate;
-  opacity: 1;
+	animation: trans-icon 1.5s infinite;
+	transform: translate(35px);
+	animation-direction: alternate;
+	opacity: 1;
 }
-
+/*Translates the weather icon back and forth*/
 @keyframes trans-icon {
-  0% {
-    transform: translateX(5px);
-  }
-  100% {
-    transform: translateX(-5px);
-  }
-}
-
-/*An animation*/
-/*An animation where color change occurs*/
-@keyframes animation {
-	0%		{background: #3c576d;}
-	50%		{background: #ef8a1f;}
-	100%	{background: #3c576d;}
-}
-/*A shape that will be animated to change color*/
-#animation {
-	width: 100px;
-	height: 100px;
-	background: #3c576d;
-	border-radius: 50px;
-	animation: animation 3s infinite;
-}
-/*Makes it possible for the user to pause the animation by hovering over it.*/
-#animation:hover{
-	animation-play-state: paused;
-}
-
-/*An transition*/
-/*Shows a shape changing color*/
-#transition{
-	width: 100px;
-	height: 100px;
-	background: #3c576d;
-	border-radius: 50px;
-	transition: background 1.5s;
-}
-#transition:hover{
-	background: #ef8a1f;
+	0% {
+		transform: translateX(5px);
+	}
+	100% {
+		transform: translateX(-5px);
+	}
 }

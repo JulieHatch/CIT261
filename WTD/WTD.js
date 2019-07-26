@@ -7,10 +7,6 @@ function storedInfo(){
 	var lon = JSON.parse(localStorage.getItem('lon'));
 	var lat = JSON.parse(localStorage.getItem('lat'));
 	
-	// TODO: Possibly add a check box to use default location
-	//document.getElementById("testLon").innerHTML = lon;
-	//document.getElementById("testLat").innerHTML = lat;
-	
 	//Check if the position is empty
 	if(lon != null || lat != null){
 		// if not change position in the input boxes
